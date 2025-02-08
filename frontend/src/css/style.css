@@ -1,0 +1,180 @@
+/* External links for fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/* initial steps */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration:none;
+  list-style-type: none;
+}
+
+/* marque designs */
+.marque {
+  background-color:#0D3B66;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-text {
+  font-family: "Nunito", serif ;
+  color: #ffff;
+  font-size: large;
+  white-space: nowrap;
+  padding: 8px 16px;
+  position: absolute;
+  animation: scroll-left 30s linear infinite;
+}
+
+.marquee-text b {
+  color: #f0c808;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(176%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Navbar design */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 60px;
+  font-family: 'Nunito', serif;
+  position: relative;
+}
+
+/* Logo */
+.nav-logo img {
+  width: auto;
+  height: 80px;
+}
+
+/* Navigation Items */
+.navitems {
+  display: flex;
+  gap: 30px;
+}
+
+/* Individual Nav Items */
+.navitems li {
+  position: relative;
+  list-style: none;
+}
+
+/* Top-Level Menu Links */
+.navitems > li > a {
+  text-decoration: none;
+  color: #0D3B66;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Unique Underline Effect for Top Menu */
+.navitems > li > a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #0077B6;
+  left: 50%;
+  bottom: -5px;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* Hover Effect for Top-Level Links */
+.navitems > li > a:hover {
+  color: #0077B6;
+}
+
+.navitems > li > a:hover::after {
+  width: 100%;
+}
+
+/* Active Page (Home) Styling */
+.navitems > li:first-child > a {
+  color: #0077B6;
+  font-weight: 700;
+}
+
+.navitems > li:first-child > a::after {
+  width: 100%;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  min-width: 180px;
+  z-index: 100;
+  padding-top: 10px;
+}
+
+/* Dropdown Items */
+.dropdown-menu li {
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Dropdown */
+.dropdown-menu li:hover {
+  background-color: #0D3B66;
+}
+
+.dropdown-menu li:hover a {
+  color: white;
+}
+
+/* Dropdown Links */
+.dropdown-menu a {
+  color: #0D3B66;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+
+/* Prevent underline effect for dropdown items */
+.dropdown-menu a::after {
+  display: none;
+}
+
+/* Show Dropdown on Hover */
+.navitems li:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
