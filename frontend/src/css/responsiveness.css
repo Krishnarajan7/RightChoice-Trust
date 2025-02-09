@@ -1,0 +1,50 @@
+/* Responsive Design for HERO */
+@media (max-width: 1024px) {
+  .hero-box {
+      margin: 0;
+      width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-box {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+  }
+
+  .hero-left, .hero-right {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      margin: 0;
+  }
+
+  .quote-container p {
+      font-size: 20px;
+  }
+
+  .hero-right img {
+      width: 60%;
+  }
+}
+
+/* Responsive Design for What we do */
+
+@media (max-width: 1024px) {
+  #what-we-do .services {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #what-we-do .services {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  #what-we-do .service {
+      flex: 1 1 100%;
+  }
+}
