@@ -48,3 +48,29 @@
       flex: 1 1 100%;
   }
 }
+
+/*Maintenance responsive*/
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .popup-content {
+      padding: 20px;
+      max-width: 90%;
+  }
+
+  #dismissBtn {
+      font-size: 14px;
+      padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-content {
+      padding: 18px;
+      max-width: 95%;
+  }
+
+  #dismissBtn {
+      font-size: 14px;
+      padding: 10px 14px;
+  }
+}
