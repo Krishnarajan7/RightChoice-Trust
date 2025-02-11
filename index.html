@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Right Choice is a modern and responsive website designed to help students explore college admission opportunities and career guidance.">
+  <meta name="keywords" content="Right Choice trust, Right Choice charity Nagapattinam">
+  <title>RightChoice</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/frontend/src/css/style.css">
+  <link rel="stylesheet" href="/frontend/src/css/responsiveness.css">
+  <link rel="stylesheet" href="/frontend/src/css/Ripple.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/frontend/public/images/IMG-20250207-WA0011.jpg">
+  
+  <!-- Font Awesome (Latest Version 6.5.1) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- AOS (Animation On Scroll) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Advanced Navbar</title>
+    <style>
+      /* Ripple effect styles */
+      .ripple-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        border-radius: inherit;
+        pointer-events: none;
+      }
+      
+      .ripple {
+        position: absolute;
+        border-radius: 50%;
+        transform: scale(0);
+        animation: ripple 0.6s linear;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      
+      @keyframes ripple {
+        to {
+          transform: scale(4);
+          opacity: 0;
+        }
+      }
+      
+      /* Disable animations during window resize */
+      .resize-animation-stopper * {
+        transition: none !important;
+      }
+    </style>
+  
+</head>
+ <body>
+    <div id="maintenancePopup" class="popup-overlay">
+        <div class="popup-content">
+            <h2>🚧 Website Under Maintenance 🚧</h2>
+            <p>We are currently performing scheduled maintenance. Some features may be unavailable.</p>
+            <button id="dismissBtn">Dismiss</button>
+        </div>
+    </div>
+    
+  <section class="marque">
+    <div class="marquee-text">
+      Location: <b>No. 3, Public Office Road,</b> Kala Hotel 1st floor, (Devi theatre opposite) <b>Nagapattinam - 611001</b>.
+    </div>
+  </section>
+  <!-- this is my navbar -->
+  <nav class="navbar">
+    <div class="brand"><img src="/frontend/public/images/Logo-sample.png" alt=""></div>
+    
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="nav-link">What We Do <span class="arrow">▼</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Our Panel</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="nav-link">Gallery</a></li>
+      <li class="dropdown">
+        <a href="#" class="nav-link">News & Events <span class="arrow">▼</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Consulting</a></li>
+          <!-- <li><a href="#">Development</a></li>
+          <li><a href="#">Support</a></li> -->
+        </ul>
+      </li>
+      <li><a href="#" class="nav-link">Registration</a></li>
+      <li><a href="#" class="nav-link">Contact us</a></li>
+    </ul>
+  </nav>
+  
+  <div id="app"></div>
+
+  <section id="hero">
+    <div class="hero-box">
+        <div class="hero-left">
+            <div class="quote-container">
+                <p id="quote-text">"Education is the most powerful weapon which you can use to change the world."</p>
+                <h3 id="quote-author">- Nelson Mandela</h3>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img id="hero-image" src="/frontend/public/images/mandela.jpg" alt="Famous Person">
+        </div>
+    </div>
+    </section>
+
+  <section id="what-we-do">
+    <div class="container">
+        <h2>What We Do</h2>
+        <p>Right Choice Educational Trust offers various scholarships for students across Tamil Nadu. We guide students in achieving their dream college admissions and support them through the counseling process. Our services include securing seats for students in MBBS, Engineering, Arts, Law, and Fisheries programs. All of these services are provided free of charge.</p>
+        <div class="services">
+            <div class="service">
+                <div class="icon-container">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Scholarships</h3>
+                <p>We provide various scholarships to support students financially throughout their education.</p>
+            </div>
+            <div class="service">
+                <div class="icon-container">
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <h3>Counseling</h3>
+                <p>Our team offers personalized counseling to help students choose the right career path and college.</p>
+            </div>
+            <div class="service">
+                <div class="icon-container">
+                    <i class="fas fa-university"></i>
+                </div>
+                <h3>College Admissions</h3>
+                <p>We assist students in securing seats in MBBS, Engineering, Arts, Law, and Fisheries programs.</p>
+            </div>
+            <div class="service">
+                <div class="icon-container">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h3>Trust Registrations</h3>
+                <p>All our services are provided completely free of charge to ensure that every student has the opportunity to succeed.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Core services -->
+  <section class="core-service">
+    <div class="core-service-container">
+        <div class="core-title">
+            <h2>Core Service</h2>
+        </div>
+        <div class="core-content">
+            <p>Right Choice is a transformative program dedicated to providing free higher education to deserving students from economically disadvantaged backgrounds. By partnering with leading educational institutions, we ensure that students receive not only tuition-free education but also support for transportation, hostel facilities (where applicable), food, books, and stationery, making quality education accessible to all.</p>
+            
+            <p>We identify high-potential students who have scored above <strong>85%</strong> but lack the financial means to even apply. A rigorous two-step verification process, including neighborhood visits and in-person interviews, ensures that no deserving student is overlooked.</p>
+            
+            <p>Since the inception of this initiative, we have successfully placed <strong>7,500+</strong> students across various disciplines, including:</p>
+            
+            <ul>
+                <li><strong>2,000+</strong> MBBS students</li>
+                <li><strong>4,000+</strong> Agriculture students</li>
+                <li><strong>200+</strong> Fisheries students</li>
+                <li><strong>1,000+</strong> Polytechnic students</li>
+                <li><strong>100+</strong> Professional courses</li>
+                <li><strong>12+</strong> Arts programs</li>
+            </ul>
+            
+            <p>To help students transition smoothly into their academic journey, dedicated mentors provide continuous guidance, assessment, and emotional support. Additionally, students undergo soft skills training and employability programs, ensuring they are career-ready upon graduation.</p>
+            
+            <p>Our Right Choice Centre of Excellence offers specialized technical certifications, equipping students with industry-relevant skills to enhance their future prospects.</p>
+            
+            <p>At Right Choice, we firmly believe that education is a right, not a privilege. Through this initiative, we are shaping a generation of confident, skilled, and empowered individuals, ready to make a difference in society.</p>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+  <div class="cards-grid">
+      <div class="card" data-tilt>
+          <div class="card-content">
+              <div class="icon-wrapper">
+                  <i class="icon admissions"></i>
+              </div>
+              <h2>Admissions</h2>
+              <p>Mauris volutpat urna tristique finibus iaculis. Morbi facilisis, justo eu vulputate elementum.</p>
+              <a href="admissions.html" class="learn-more">
+                  <span>Learn More</span>
+                  <svg viewBox="0 0 24 24">
+                      <path d="M7 17l5-5-5-5"></path>
+                      <path d="M13 17l5-5-5-5"></path>
+                  </svg>
+              </a>
+          </div>
+          <div class="card-shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+          </div>
+      </div>
+
+      <div class="card" data-tilt>
+          <div class="card-content">
+              <div class="icon-wrapper">
+                  <i class="icon mbbs"></i>
+              </div>
+              <h2>MBBS</h2>
+              <p>Mauris volutpat urna tristique finibus iaculis. Morbi facilisis, justo eu vulputate elementum.</p>
+              <a href="mbbs.html" class="learn-more">
+                  <span>Learn More</span>
+                  <svg viewBox="0 0 24 24">
+                      <path d="M7 17l5-5-5-5"></path>
+                      <path d="M13 17l5-5-5-5"></path>
+                  </svg>
+              </a>
+          </div>
+          <div class="card-shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+          </div>
+      </div>
+
+      <div class="card" data-tilt>
+          <div class="card-content">
+              <div class="icon-wrapper">
+                  <i class="icon engineering"></i>
+              </div>
+              <h2>Engineering</h2>
+              <p>Mauris volutpat urna tristique finibus iaculis. Morbi facilisis, justo eu vulputate elementum.</p>
+              <a href="engineering.html" class="learn-more">
+                  <span>Learn More</span>
+                  <svg viewBox="0 0 24 24">
+                      <path d="M7 17l5-5-5-5"></path>
+                      <path d="M13 17l5-5-5-5"></path>
+                  </svg>
+              </a>
+          </div>
+          <div class="card-shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+          </div>
+      </div>
+
+      <div class="card" data-tilt>
+          <div class="card-content">
+              <div class="icon-wrapper">
+                  <i class="icon arts"></i>
+              </div>
+              <h2>Arts & Science</h2>
+              <p>Mauris volutpat urna tristique finibus iaculis. Morbi facilisis, justo eu vulputate elementum.</p>
+              <a href="arts.html" class="learn-more">
+                  <span>Learn More</span>
+                  <svg viewBox="0 0 24 24">
+                      <path d="M7 17l5-5-5-5"></path>
+                      <path d="M13 17l5-5-5-5"></path>
+                  </svg>
+              </a>
+          </div>
+          <div class="card-shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+          </div>
+      </div>
+
+      <div class="card" data-tilt>
+          <div class="card-content">
+              <div class="icon-wrapper">
+                  <i class="icon fisheries"></i>
+              </div>
+              <h2>Fisheries</h2>
+              <p>Mauris volutpat urna tristique finibus iaculis. Morbi facilisis, justo eu vulputate elementum.</p>
+              <a href="fisheries.html" class="learn-more">
+                  <span>Learn More</span>
+                  <svg viewBox="0 0 24 24">
+                      <path d="M7 17l5-5-5-5"></path>
+                      <path d="M13 17l5-5-5-5"></path>
+                  </svg>
+              </a>
+          </div>
+          <div class="card-shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+          </div>
+      </div>
+
+      <div class="card" data-tilt>
+          <div class="card-content">
+              <div class="icon-wrapper">
+                  <i class="icon scholarship"></i>
+              </div>
+              <h2>Scholarships</h2>
+              <p>Mauris volutpat urna tristique finibus iaculis. Morbi facilisis, justo eu vulputate elementum.</p>
+              <a href="scholarships.html" class="learn-more">
+                  <span>Learn More</span>
+                  <svg viewBox="0 0 24 24">
+                      <path d="M7 17l5-5-5-5"></path>
+                      <path d="M13 17l5-5-5-5"></path>
+                  </svg>
+              </a>
+          </div>
+          <div class="card-shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+          </div>
+      </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+  
+
+  <script src="/frontend/js/hamb.js"></script>
+  <script src="/frontend/js/hero.js"></script>
+  <script src="/frontend/js/maintenance.js"></script>
+  <script src="/frontend/js/main.js"></script>
+</body>
+</html>
