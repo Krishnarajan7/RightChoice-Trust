@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (!startTimestamp) startTimestamp = timestamp;
           const progress = Math.min((timestamp - startTimestamp) / duration, 1);
           const currentValue = Math.floor(progress * (end - start) + start);
-          element.textContent = currentValue + (end === 7000 || end === 1000 ? '+' : '+');
+          element.textContent = currentValue + (end === 7500 || end === 1000 ? '+' : '+');
           if (progress < 1) {
               window.requestAnimationFrame(step);
           }
