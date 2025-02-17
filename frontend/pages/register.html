@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Right Choice is a modern and responsive website designed to help students explore college admission opportunities and career guidance.">
+  <meta name="keywords" content="Right Choice trust, Right Choice charity Nagapattinam">
+  <title>Scholarships-Register Form</title>
+  <link rel="stylesheet" href="/frontend/src/css/style.css">
+  <link rel="stylesheet" href="/frontend/src/css/footer.css">
+  <link rel="stylesheet" href="/frontend/src/css/register.css">
+
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/frontend/public/images/IMG-20250207-WA0011.jpg">
+  
+  <!-- Font Awesome (Latest Version 6.5.1) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS (Animation On Scroll) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
+</head>
+<body>
+  <div class="top-bar">
+    <div class="top-content">
+      <div class="logo">
+        <div>
+            <span class="right">RIGHT</span> <span class="choice">CHOICE</span>
+        </div>
+        <div class="info-item">
+            <p>Educational & Charitable Trust</p>
+        </div>
+    </div>
+    
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Our Office</span>
+                <p>No 3, Public Office Road, Nagapatiinam.</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>Email Us</span>
+                <p>rightchoice@example.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <span>Call Us</span>
+                <p>90959 29553</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="nav-content">
+
+        <a href="/frontend/pages/register.html">
+            <button class="call-now-btns">
+                <span>Register for Scholarships</span>
+                <i class="fa-solid fa-graduation-cap"></i>
+            </button>
+        </a>
+        <!-- <div class="subjects-dropdown">
+            <button class="subjects-btn">
+                <i class="fas fa-book"></i>
+                Register for Scholarship
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#"><i class="fas fa-calculator"></i>Medical</a>
+                <a href="#"><i class="fas fa-flask"></i>Engineering</a>
+                <a href="#"><i class="fas fa-language"></i>Agriculture</a>
+                <a href="#"><i class="fas fa-landmark"></i>Fisheries</a>
+                <a href="#"><i class="fas fa-laptop-code"></i>Laws</a>
+                <a href="#"><i class="fas fa-laptop-code"></i>Arts & Science</a>
+                <a href="#"><i class="fas fa-laptop-code"></i>Polytechinc</a>
+            </div>
+        </div> -->
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li class="courses-dropdown">
+                <a href="#">What we do <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-code"></i>Our Services</a>
+                    <a href="#"><i class="fas fa-database"></i>Panel Members</a>
+                    <a href="#"><i class="fas fa-bullhorn"></i>Our Supporters</a>
+                </div>
+            </li>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <button class="call-now-btn">
+            <span>Call Now</span>
+            <i class="fas fa-phone"></i>
+        </button>
+    </div>
+</nav>
+
+<div class="form_container">
+  <div class="form_title">Student Registration Form</div>
+  
+  <form id="studentForm" class="registration_form">
+      <div class="form_row">
+          <div class="form_group">
+              <label class="form_label">Student Name <span class="required">*</span></label>
+              <input type="text" class="form_input" id="studentName" placeholder="Enter Student Name" required>
+          </div>
+          
+          <div class="form_group">
+              <label class="form_label">Mobile Number <span class="required">*</span></label>
+              <input type="tel" class="form_input" id="mobileNumber" placeholder="Enter Mobile Number" required>
+          </div>
+          
+          <div class="form_group">
+              <label class="form_label">Whatsapp Number <span class="required">*</span></label>
+              <input type="tel" class="form_input" id="whatsappNumber" placeholder="Enter Whatsapp Number" required>
+          </div>
+      </div>
+
+      <div class="form_row">
+          <div class="form_group">
+              <label class="form_label">Age <span class="required">*</span></label>
+              <input type="number" class="form_input" id="age" placeholder="Enter Age" required>
+          </div>
+          
+          <div class="form_group">
+              <label class="form_label">Date of Birth <span class="required">*</span></label>
+              <input type="date" class="form_input" id="dateOfBirth" required>
+          </div>
+          
+          <div class="form_group">
+              <label class="form_label">Community <span class="required">*</span></label>
+              <select class="form_select" id="community" required>
+                  <option value="">Select an Community</option>
+                  <option value="OC">OC</option>
+                  <option value="BC">BC</option>
+                  <option value="MBC">BCM</option>
+                  <option value="SC">MBS & DNC</option>
+                  <option value="ST">SC</option>
+                  <option value="ST">ST</option>
+              </select>
+          </div>
+      </div>
+
+      <div class="form_row">
+          <div class="form_group">
+              <label class="form_label">School Name <span class="required">*</span></label>
+              <input type="text" class="form_input" id="schoolName" placeholder="Enter School Name" required>
+          </div>
+          
+          <div class="form_group">
+              <label class="form_label">District <span class="required">*</span></label>
+              <input type="text" class="form_input" id="district" placeholder="Enter Place" required>
+          </div>
+          
+          <div class="form_group">
+              <label class="form_label">Studying Group <span class="required">*</span></label>
+              <select class="form_select" id="studyingGroup" required>
+                  <option value="">Select an Studying Group</option>
+                  <option value="PCMB">Physics,Chemistry,Maths,Biology</option>
+                  <option value="PCMC">Physics,Chemistry,Maths,Computer Science</option>
+                  <option value="PCBC">Physics,Chemistry,Biology,Computer Science</option>
+                  <option value="PCBZ">Physics,Chemistry,Botony,Zoology</option>
+                  <option value="M-VOC">M-VOC</option>
+                  <option value="ARTS">ARTS</option>
+              </select>
+          </div>
+      </div>
+
+      <div class="form_row">
+          <div class="form_group full_width">
+              <label class="form_label">Course Willingness <span class="required">*</span></label>
+              <select class="form_select" id="courseWillingness" required>
+                  <option value="">Select an Course</option>
+                  <option value="Medical">Medical</option>
+                  <option value="Engg">Engg</option>
+                  <option value="Law">Law</option>
+                  <option value="Agri">Agri</option>
+                  <option value="Fisheries">Fisheries</option>
+                  <option value="Arts">Arts & Science</option>
+                  <option value="Poly">Polytechnic</option>
+              </select>
+          </div>
+      </div>
+
+      <button type="submit" class="submit_button">Submit</button>
+  </form>
+</div>
+
+<div id="educational-trust-container">
+  <footer class="edu-footer">
+    <div class="edu-footer__wave-container">
+      <div class="edu-footer__wave edu-footer__wave--first"></div>
+      <div class="edu-footer__wave edu-footer__wave--second"></div>
+      <div class="edu-footer__wave edu-footer__wave--third"></div>
+    </div>
+    
+    <i class="fas fa-graduation-cap edu-footer__decoration edu-footer__decoration--top-right"></i>
+    <i class="fas fa-book-open edu-footer__decoration edu-footer__decoration--bottom-left"></i>
+    <i class="fas fa-atom edu-footer__decoration edu-footer__decoration--top-left"></i>
+    <i class="fas fa-dna edu-footer__decoration edu-footer__decoration--bottom-right"></i>
+    
+    <div class="edu-footer__content">
+      <div class="edu-footer__section edu-footer__section--about">
+        <h3 class="edu-footer__heading">About Us</h3>
+        <p>Right Choice Educational And Charitable Trust is dedicated to providing quality education and fostering academic excellence. Our mission is to empower students with knowledge and skills for a better future.</p>
+        <div class="edu-footer__stats">
+          <div class="edu-footer__stat-item">
+            <i class="fas fa-user-graduate"></i>
+            <span>7500+</span>
+            <p>Students</p>
+          </div>
+          <div class="edu-footer__stat-item">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <span>2000+</span>
+            <p>Meical Students</p>
+          </div>
+          <div class="edu-footer__stat-item">
+            <i class="fas fa-award"></i>
+            <span>4000+</span>
+            <p>Engineering Students</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="edu-footer__section edu-footer__section--links">
+        <h3 class="edu-footer__heading">Quick Links</h3>
+        <ul class="edu-footer__list">
+          <li class="edu-footer__list-item">
+            <a href="#" class="edu-footer__link"><i class="fas fa-graduation-cap"></i> Home</a>
+          </li>
+          <li class="edu-footer__list-item">
+            <a href="#" class="edu-footer__link"><i class="fas fa-book-reader"></i>What We Do</a>
+          </li>
+          <li class="edu-footer__list-item">
+            <a href="#" class="edu-footer__link"><i class="fas fa-calendar-alt"></i>News & Events</a>
+          </li>
+          <li class="edu-footer__list-item">
+            <a href="#" class="edu-footer__link"><i class="fas fa-users"></i>Gallery</a>
+          </li>
+          <li class="edu-footer__list-item">
+            <a href="#" class="edu-footer__link"><i class="fas fa-chalkboard-teacher"></i>Our Supporters</a>
+          </li>
+          <li class="edu-footer__list-item">
+            <a href="#" class="edu-footer__link"><i class="fas fa-microscope"></i> Scholarships</a>
+          </li>
+          <li class="edu-footer__list-item">
+            <a href="#" class="edu-footer__link"><i class="fas fa-medal"></i> Admissions</a>
+          </li>
+          <li class="edu-footer__list-item">
+            <a href="#" class="edu-footer__link"><i class="fas fa-hands-helping"></i> Neet Coaching</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="edu-footer__section edu-footer__section--contact">
+        <h3 class="edu-footer__heading">Contact Info</h3>
+        <ul class="edu-footer__contact-list">
+          <li class="edu-footer__contact-item">
+            <i class="fas fa-phone edu-footer__contact-icon"></i>
+            <div class="edu-footer__contact-details">
+              <span class="edu-footer__contact-label">Call Us:</span>
+              <span class="edu-footer__contact-value">+90959 29553</span>
+            </div>
+          </li>
+          <li class="edu-footer__contact-item">
+            <i class="fas fa-envelope edu-footer__contact-icon"></i>
+            <div class="edu-footer__contact-details">
+              <span class="edu-footer__contact-label">Email Us:</span>
+              <span class="edu-footer__contact-value">founder@rightchoice.edu</span>
+            </div>
+          </li>
+          <li class="edu-footer__contact-item">
+            <i class="fas fa-map-marker-alt edu-footer__contact-icon"></i>
+            <div class="edu-footer__contact-details">
+              <span class="edu-footer__contact-label">Visit Us:</span>
+              <span class="edu-footer__contact-value">No 3. Public Office road, Nagapattinam</span>
+            </div>
+          </li>
+        </ul>
+        <!-- <div class="edu-footer__newsletter">
+          <h4 class="edu-footer__subheading">Subscribe to Newsletter</h4>
+          <form class="edu-footer__form">
+            <input type="email" placeholder="Enter your email" class="edu-footer__input">
+            <button type="submit" class="edu-footer__submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="edu-footer__map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.52388858696875!2d79.84079204499722!3d10.76885092480463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a556d0025598d93%3A0xa3a75ec6f8b1fca4!2sRight%20Choice%20Educational%20And%20Charitable%20Trust!5e1!3m2!1sen!2sin!4v1739633129692!5m2!1sen!2sin" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="edu-footer__bottom">
+      <div class="edu-footer__social">
+        <a href="#" class="edu-footer__social-link">
+          <i class="fab fa-facebook"></i>
+          <span class="edu-footer__social-tooltip">Facebook</span>
+        </a>
+        <a href="#" class="edu-footer__social-link">
+          <i class="fab fa-twitter"></i>
+          <span class="edu-footer__social-tooltip">Twitter</span>
+        </a>
+        <a href="#" class="edu-footer__social-link">
+          <i class="fab fa-instagram"></i>
+          <span class="edu-footer__social-tooltip">Instagram</span>
+        </a>
+        <a href="#" class="edu-footer__social-link">
+          <i class="fab fa-linkedin"></i>
+          <span class="edu-footer__social-tooltip">LinkedIn</span>
+        </a>
+        <a href="#" class="edu-footer__social-link">
+          <i class="fab fa-youtube"></i>
+          <span class="edu-footer__social-tooltip">YouTube</span>
+        </a>
+      </div>
+      <!-- <div class="edu-footer__certificates">
+        <img src="https://img.icons8.com/color/48/000000/iso-certified.png" alt="ISO Certified" class="edu-footer__certificate">
+        <img src="https://img.icons8.com/color/48/000000/certificate.png" alt="NAAC A+" class="edu-footer__certificate">
+      </div> -->
+      <p class="edu-footer__copyright">
+        © 2025 Right Choice Educational Trust. All rights reserved.
+        <span class="edu-footer__separator">|</span>
+        <a href="#" class="edu-footer__policy-link">Privacy Policy</a>
+        <span class="edu-footer__separator">|</span>
+        <a href="#" class="edu-footer__policy-link">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+</div>
+</footer>
+<script src="/frontend/js/register.js"></script>
+
+</body>
+</body>
+</html>
