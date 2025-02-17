@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/frontend/src/css/Ripple.css">
   <link rel="stylesheet" href="/frontend/src/css/scrolltop.css">
   <link rel="stylesheet" href="/frontend/src/css/footer.css">
+  <link rel="stylesheet" href="/frontend/src/css/owner.css">
   
   <!-- Favicon -->
   <link rel="icon" href="/frontend/public/images/IMG-20250207-WA0011.jpg">
@@ -29,7 +30,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Advanced Navbar</title>
     <style>
       /* Ripple effect styles */
       .ripple-container {
@@ -58,7 +58,6 @@
         }
       }
       
-      /* Disable animations during window resize */
       .resize-animation-stopper * {
         transition: none !important;
       }
@@ -114,29 +113,12 @@
 <nav class="navbar">
     <div class="nav-content">
 
-        <a href="https://forms.gle/your-google-form-link" target="_blank">
+        <a href="/frontend/pages/register.html">
             <button class="call-now-btns">
                 <span>Register for Scholarships</span>
                 <i class="fa-solid fa-graduation-cap"></i>
             </button>
         </a>
-        <!-- <div class="subjects-dropdown">
-            <button class="subjects-btn">
-                <i class="fas fa-book"></i>
-                Register for Scholarship
-                <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#"><i class="fas fa-calculator"></i>Medical</a>
-                <a href="#"><i class="fas fa-flask"></i>Engineering</a>
-                <a href="#"><i class="fas fa-language"></i>Agriculture</a>
-                <a href="#"><i class="fas fa-landmark"></i>Fisheries</a>
-                <a href="#"><i class="fas fa-laptop-code"></i>Laws</a>
-                <a href="#"><i class="fas fa-laptop-code"></i>Arts & Science</a>
-                <a href="#"><i class="fas fa-laptop-code"></i>Polytechinc</a>
-            </div>
-        </div> -->
-
         <div class="hamburger">
             <span></span>
             <span></span>
@@ -249,7 +231,7 @@
         </div>
     </div>
 </section>
-    <!-- bootstrap design -->
+    <!--card design -->
 <div class="container">
   <div class="cards-grid">
 
@@ -445,9 +427,6 @@
             <div class="shape shape-2"></div>
         </div>
     </div>
-
-
-      
   </div>
 </div>
 
@@ -490,9 +469,32 @@
             </div>
         </div>
     </section>
+    <!-- founder design -->
 
-    <!-- scroll to top -->
-    <div id="app"></div>
+    <div id="executive-spotlight-app">
+      <div class="spotlight-header">
+        <h1>What Our Founder Says</h1>
+        <div class="spotlight-subheading">Insights from our visionary leader</div>
+      </div>
+      <div class="executive-quote-wrapper">
+        <div class="executive-profile-section">
+          <img src="/frontend/public/images/sirimage.JPG" alt="Executive Portrait">
+          <div class="executive-details">
+            <h2>Dr. L. Ramachandran, M.Tech., Ph.D.,
+            </h2>
+            <p class="executive-position">Chairman & CEO</p>
+            <p class="executive-company">Right Choice Educational & Charitable Trust
+            </p>
+          </div>
+        </div>
+        <div class="executive-quote-section">
+          <div class="quote-symbol quote-symbol-opening">"</div>
+          <p id="executive-quote-text">அச்சம் விடு
+          <br>உச்சம் தொடு..</p>
+          <div class="quote-symbol quote-symbol-closing">"</div>
+        </div>
+      </div>
+    </div>
 
     <!-- footer -->
     <div id="educational-trust-container">
@@ -648,9 +650,9 @@
         </footer>
       </div>
       </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 
-    <script src="/frontend/js/scrolltop.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+      <script src="/frontend/js/scrolltop.js"></script>
 
 
   <script src="/frontend/js/hamb.js"></script>
