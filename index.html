@@ -64,13 +64,17 @@
     </style>
   
 </head>
- <body>
+  <body>
     <div id="maintenancePopup" class="popup-overlay">
         <div class="popup-content">
             <h2>🚧 Website Under Maintenance 🚧</h2>
             <p>We are currently performing scheduled maintenance. Some features may be unavailable.</p>
             <button id="dismissBtn">Dismiss</button>
         </div>
+    </div>
+
+    <div class="back-to-top-btn">
+      <div class="show-scroll-btn"></div>
     </div>
     
   <section class="marque">
@@ -112,7 +116,6 @@
 
 <nav class="navbar">
     <div class="nav-content">
-
         <a href="/frontend/pages/register.html">
             <button class="call-now-btns">
                 <span>Register for Scholarships</span>
@@ -127,7 +130,7 @@
 
         <ul class="nav-links">
             <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Admissions</a></li>
+            <li><a href="/frontend/pages/admissions.html">Admissions</a></li>
             <li class="courses-dropdown">
                 <a href="#">What we do <i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-content">
@@ -137,8 +140,8 @@
                 </div>
             </li>
             <li><a href="#">News & Events</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="/frontend/pages/gallery.html">Gallery</a></li>
+            <li><a href="/frontend/pages/contact.html">Contact Us</a></li>
         </ul>
 
         <button class="call-now-btn">
@@ -478,7 +481,7 @@
       </div>
       <div class="executive-quote-wrapper">
         <div class="executive-profile-section">
-          <img src="/frontend/public/images/sirimage.JPG" alt="Executive Portrait">
+          <img src="/frontend/public/images/sirimage.png" alt="Executive Portrait">
           <div class="executive-details">
             <h2>Dr. L. Ramachandran, M.Tech., Ph.D.,
             </h2>
@@ -523,7 +526,7 @@
                 <div class="edu-footer__stat-item">
                   <i class="fas fa-chalkboard-teacher"></i>
                   <span>2000+</span>
-                  <p>Meical Students</p>
+                  <p>Medical Students</p>
                 </div>
                 <div class="edu-footer__stat-item">
                   <i class="fas fa-award"></i>
@@ -577,7 +580,7 @@
                   <i class="fas fa-envelope edu-footer__contact-icon"></i>
                   <div class="edu-footer__contact-details">
                     <span class="edu-footer__contact-label">Email Us:</span>
-                    <span class="edu-footer__contact-value">founder@rightchoice.edu</span>
+                    <span class="edu-footer__contact-value">founder@rightchoice.com</span>
                   </div>
                 </li>
                 <li class="edu-footer__contact-item">
@@ -622,15 +625,15 @@
                 <i class="fab fa-twitter"></i>
                 <span class="edu-footer__social-tooltip">Twitter</span>
               </a>
-              <a href="#" class="edu-footer__social-link">
+              <a href="https://www.instagram.com/rightchoice_trust?igsh=MXF1ZHo5eXIxMGxwNg==" class="edu-footer__social-link">
                 <i class="fab fa-instagram"></i>
                 <span class="edu-footer__social-tooltip">Instagram</span>
               </a>
               <a href="#" class="edu-footer__social-link">
-                <i class="fab fa-linkedin"></i>
-                <span class="edu-footer__social-tooltip">LinkedIn</span>
+                <i class="fab fa-whatsapp"></i>
+                <span class="edu-footer__social-tooltip">WhatsApp</span>
               </a>
-              <a href="#" class="edu-footer__social-link">
+              <a href="https://youtube.com/@ramachandranl8870?si=pbgH8FvpNYK7WYs7" class="edu-footer__social-link">
                 <i class="fab fa-youtube"></i>
                 <span class="edu-footer__social-tooltip">YouTube</span>
               </a>
@@ -650,6 +653,7 @@
         </footer>
       </div>
       </footer>
+      
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
       <script src="/frontend/js/scrolltop.js"></script>
