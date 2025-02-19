@@ -1,0 +1,155 @@
+.admissions-container {
+    max-width: 1200px;
+    margin: 0 auto  ;
+    height: auto;
+    padding: 2rem;
+    background-color: #f5f8fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admissions-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.admissions-title {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: #003d7a;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.admissions-status {
+    background-color: #000;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.courses-section__title {
+    color: #0066cc;
+    margin-bottom: 2rem;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.courses-section__title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #0066cc;
+}
+
+.courses-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.course-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.course-card__header {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: clamp(0.8rem, 2vw, 1.5rem);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.course-card__header:hover {
+    background-color: #004999;
+}
+
+.course-card__title {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin: 0;
+    font-weight: 600;
+}
+
+.course-card__toggle {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.course-card__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.course-card__list {
+    list-style: none;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    margin: 0;
+}
+
+.course-card__item {
+    padding: 0.5rem 0;
+    color: #666;
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.course-card__item::before {
+    content: '•';
+    color: #0066cc;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.course-card.is-active .course-card__content {
+    max-height: 1000px;
+}
+
+.course-card.is-active .course-card__toggle {
+    transform: rotate(45deg);
+}
+
+@media screen and (min-width: 768px) {
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .courses-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .admissions-container {
+        padding: 1rem;
+    }
+    
+    .course-card__header {
+        padding: 0.8rem 1rem;
+    }
+    
+    .course-card__list {
+        padding: 1rem;
+    }
+}
