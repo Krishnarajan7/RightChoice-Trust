@@ -26,6 +26,13 @@ html, body {
   overflow-x: hidden;
 }
 
+/* [data-aos] {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+} */
+
+
 
 /* Disable scrolling when popup is active */
 body.no-scroll {
@@ -133,6 +140,7 @@ body.no-scroll .author-animation {
   }
 }
 
+
 /* Navbar design */
 :root {
   --primary-color: #0066cc;
@@ -161,28 +169,34 @@ body.no-scroll .author-animation {
 
 .logo {
   height: auto;
+  width: auto;
   font-family: 'Poppins',serif;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers content horizontally */
-  text-align: center; /* Ensures text is centered */
+  align-items: center; 
+  text-align: center; 
+}
+
+.logo-img {
+  height: 80px; /* Adjust based on your logo size */
+  width: auto;
 }
 
 .right {
   font-size: 30px;
   font-weight: bold;
-  color: #ffffff; /* Customize color */
+  color: #ffffff; 
 }
 
 .choice {
   font-size: 30px;
   font-weight: bold;
-  color: #007bff; /* Customize color */
+  color: #007bff; 
 }
 
 .info-item {
   font-size: 14px;
-  color: gray; /* Customize color */
+  color: gray; 
 }
 
 
@@ -529,7 +543,7 @@ body.no-scroll .author-animation {
 }
 
 /* Mobile Navigation */
-/* Keep all your existing CSS until the mobile media query, then replace it with: */
+
 
 @media screen and (max-width: 968px) {
   .contact-info {
@@ -550,8 +564,12 @@ body.no-scroll .author-animation {
       left: 50%;
       transform: translateX(-50%);
   }
-  .top-bar{
 
+  .logo-img{
+    width: 50px;
+    height: auto;
+  }
+  .top-bar{
     margin-top: 0px;
     padding: 40px;
   }
@@ -679,8 +697,12 @@ body.no-scroll .author-animation {
 
 @media (max-width: 768px) {
   .logo {
+      margin-top: 30px;
       height: auto; /* Adjust height automatically */
       padding: 15px 0;
+  }
+  .top-bar{
+    height: 30px;
   }
 
   .right, .choice {
@@ -806,6 +828,7 @@ body.no-scroll .author-animation {
 
 /* What We Do Section */
 #what-we-do {
+
   padding: 60px 20px;
   background-color: #fff;
   text-align: center;
