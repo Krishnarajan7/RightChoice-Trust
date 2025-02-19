@@ -50,7 +50,6 @@
 }
 
 /*Maintenance responsive*/
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .popup-content {
       padding: 20px;
@@ -75,4 +74,3 @@
   }
 }
 
-/* counting responsive */
