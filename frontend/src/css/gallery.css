@@ -1,0 +1,135 @@
+.gallery-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  height: auto;
+  overflow-y: auto;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+  background-color: #fff;
+  padding: 15px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.filter-btn:hover {
+  background-color: #283593;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background-color: #0d47a1;
+  box-shadow: 0 4px 8px rgba(13, 71, 161, 0.3);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  min-height: calc(100vh - 200px);
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  aspect-ratio: 4/3;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-item.hidden {
+  display: none;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.category-tag {
+  color: white;
+  font-size: 14px;
+  background-color: #1a237e;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .filter-buttons {
+      gap: 5px;
+      padding: 10px 0;
+  }
+
+  .filter-btn {
+      padding: 8px 15px;
+      font-size: 12px;
+  }
+
+  .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-container {
+      padding: 10px;
+  }
+
+  .filter-btn {
+      padding: 6px 12px;
+      font-size: 11px;
+  }
+
+  .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+  }
+}
