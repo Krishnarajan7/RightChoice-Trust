@@ -54,6 +54,7 @@
   position: relative;
   overflow: hidden;
   height: 600px;
+  background-color: #0D3B66;
 }
 
 .executive-profile-section::after {
@@ -63,11 +64,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
+  
 }
 
 .executive-profile-section img {
