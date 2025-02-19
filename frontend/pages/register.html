@@ -26,6 +26,7 @@
   <div class="top-bar">
     <div class="top-content">
       <div class="logo">
+        <img src="/frontend/public/images/RIGHTCHOICE.jpg" alt="Right Choice Logo" class="logo-img">
         <div>
             <span class="right">RIGHT</span> <span class="choice">CHOICE</span>
         </div>
@@ -54,7 +55,7 @@
     </div>
 </div>
 
-<nav class="navbar">
+<nav class="navbar" data-aos="zoom-out">
     <div class="nav-content">
 
         <a href="/frontend/pages/register.html">
@@ -63,23 +64,6 @@
                 <i class="fa-solid fa-graduation-cap"></i>
             </button>
         </a>
-        <!-- <div class="subjects-dropdown">
-            <button class="subjects-btn">
-                <i class="fas fa-book"></i>
-                Register for Scholarship
-                <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#"><i class="fas fa-calculator"></i>Medical</a>
-                <a href="#"><i class="fas fa-flask"></i>Engineering</a>
-                <a href="#"><i class="fas fa-language"></i>Agriculture</a>
-                <a href="#"><i class="fas fa-landmark"></i>Fisheries</a>
-                <a href="#"><i class="fas fa-laptop-code"></i>Laws</a>
-                <a href="#"><i class="fas fa-laptop-code"></i>Arts & Science</a>
-                <a href="#"><i class="fas fa-laptop-code"></i>Polytechinc</a>
-            </div>
-        </div> -->
-
         <div class="hamburger">
             <span></span>
             <span></span>
@@ -92,14 +76,14 @@
             <li class="courses-dropdown">
                 <a href="#">What we do <i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-content">
-                    <a href="#"><i class="fas fa-code"></i>Our Services</a>
+                    <a href="/frontend/pages/team.html"><i class="fas fa-code"></i>Our Team</a>
                     <a href="#"><i class="fas fa-database"></i>Panel Members</a>
-                    <a href="#"><i class="fas fa-bullhorn"></i>Our Supporters</a>
+                    <a href="/frontend/pages/supporters.html"><i class="fas fa-bullhorn"></i>Our Supporters</a>
                 </div>
             </li>
             <li><a href="#">News & Events</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="/frontend/pages/gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
 
         <button class="call-now-btn">
@@ -109,94 +93,99 @@
     </div>
 </nav>
 
-<div class="form_container">
-  <div class="form_title">Student Registration Form</div>
+<div class="registration-container" data-aos="fade-up">
+  <div class="alert alert-success" id="successAlert">Registration submitted successfully!</div>
+  <div class="alert alert-error" id="errorAlert"></div>
   
-  <form id="studentForm" class="registration_form">
-      <div class="form_row">
-          <div class="form_group">
-              <label class="form_label">Student Name <span class="required">*</span></label>
-              <input type="text" class="form_input" id="studentName" placeholder="Enter Student Name" required>
+  <form id="studentRegistrationForm">
+      <h1 class="form-header">STUDENT REGISTRATION FORM</h1>
+      
+      <div class="input-group">
+          <label class="input-label" for="studentName">STUDENT NAME <span class="required-mark">*</span></label>
+          <input type="text" id="studentName" name="studentName" class="form-input" required placeholder="Enter your full name">
+      </div>
+
+      <div class="input-row">
+          <div class="input-group">
+              <label class="input-label" for="mobileNumber">MOBILE NUMBER <span class="required-mark">*</span></label>
+              <input type="tel" id="mobileNumber" name="mobileNumber" class="form-input" required placeholder="Enter mobile number">
           </div>
-          
-          <div class="form_group">
-              <label class="form_label">Mobile Number <span class="required">*</span></label>
-              <input type="tel" class="form_input" id="mobileNumber" placeholder="Enter Mobile Number" required>
-          </div>
-          
-          <div class="form_group">
-              <label class="form_label">Whatsapp Number <span class="required">*</span></label>
-              <input type="tel" class="form_input" id="whatsappNumber" placeholder="Enter Whatsapp Number" required>
+
+          <div class="input-group">
+              <label class="input-label" for="whatsappNumber">WHATSAPP NUMBER <span class="required-mark">*</span></label>
+              <input type="tel" id="whatsappNumber" name="whatsappNumber" class="form-input" required placeholder="Enter WhatsApp number">
           </div>
       </div>
 
-      <div class="form_row">
-          <div class="form_group">
-              <label class="form_label">Age <span class="required">*</span></label>
-              <input type="number" class="form_input" id="age" placeholder="Enter Age" required>
+      <div class="input-row">
+          <div class="input-group">
+              <label class="input-label" for="age">AGE <span class="required-mark">*</span></label>
+              <input type="number" id="age" name="age" class="form-input" required placeholder="Enter your age">
           </div>
-          
-          <div class="form_group">
-              <label class="form_label">Date of Birth <span class="required">*</span></label>
-              <input type="date" class="form_input" id="dateOfBirth" required>
+
+          <div class="input-group">
+              <label class="input-label" for="dateOfBirth">DATE OF BIRTH <span class="required-mark">*</span></label>
+              <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-input" required>
           </div>
-          
-          <div class="form_group">
-              <label class="form_label">Community <span class="required">*</span></label>
-              <select class="form_select" id="community" required>
-                  <option value="">Select an Community</option>
+      </div>
+
+      <div class="input-row">
+          <div class="input-group">
+              <label class="input-label" for="community">COMMUNITY <span class="required-mark">*</span></label>
+              <select id="community" name="community" class="form-select" required>
+                  <option value="">Select your Community</option>
                   <option value="OC">OC</option>
                   <option value="BC">BC</option>
-                  <option value="MBC">BCM</option>
-                  <option value="SC">MBS & DNC</option>
-                  <option value="ST">SC</option>
+                  <option value="BCM">BCM</option>
+                  <option value="MBC & DNC">MBC & DNC</option>
+                  <option value="SC">SC</option>
                   <option value="ST">ST</option>
               </select>
           </div>
-      </div>
 
-      <div class="form_row">
-          <div class="form_group">
-              <label class="form_label">School Name <span class="required">*</span></label>
-              <input type="text" class="form_input" id="schoolName" placeholder="Enter School Name" required>
-          </div>
-          
-          <div class="form_group">
-              <label class="form_label">District <span class="required">*</span></label>
-              <input type="text" class="form_input" id="district" placeholder="Enter Place" required>
-          </div>
-          
-          <div class="form_group">
-              <label class="form_label">Studying Group <span class="required">*</span></label>
-              <select class="form_select" id="studyingGroup" required>
-                  <option value="">Select an Studying Group</option>
-                  <option value="PCMB">Physics,Chemistry,Maths,Biology</option>
-                  <option value="PCMC">Physics,Chemistry,Maths,Computer Science</option>
-                  <option value="PCBC">Physics,Chemistry,Biology,Computer Science</option>
-                  <option value="PCBZ">Physics,Chemistry,Botony,Zoology</option>
+          <div class="input-group">
+              <label class="input-label" for="studyingGroup">STUDYING GROUP <span class="required-mark">*</span></label>
+              <select id="studyingGroup" name="studyingGroup" class="form-select" required>
+                  <option value="">Select your Studying Group</option>
+                  <option value="PCMB">Pysics,Chemsitry,Maths,Biology</option>
+                  <option value="PCMC">Pysics,Chemsitry,Maths,Computer Science</option>
+                  <option value="PCBC">Pysics,Chemsitry,Biology,Computer Science</option>
+                  <option value="PCBZ">Pysics,Chemsitry,Botony,Zoology</option>
                   <option value="M-VOC">M-VOC</option>
                   <option value="ARTS">ARTS</option>
               </select>
           </div>
       </div>
 
-      <div class="form_row">
-          <div class="form_group full_width">
-              <label class="form_label">Course Willingness <span class="required">*</span></label>
-              <select class="form_select" id="courseWillingness" required>
-                  <option value="">Select an Course</option>
-                  <option value="Medical">Medical</option>
-                  <option value="Engg">Engg</option>
-                  <option value="Law">Law</option>
-                  <option value="Agri">Agri</option>
-                  <option value="Fisheries">Fisheries</option>
-                  <option value="Arts">Arts & Science</option>
-                  <option value="Poly">Polytechnic</option>
-              </select>
+      <div class="input-row">
+          <div class="input-group">
+              <label class="input-label" for="schoolName">SCHOOL NAME <span class="required-mark">*</span></label>
+              <input type="text" id="schoolName" name="schoolName" class="form-input" required placeholder="Enter your school name">
+          </div>
+
+          <div class="input-group">
+              <label class="input-label" for="district">DISTRICT <span class="required-mark">*</span></label>
+              <input type="text" id="district" name="district" class="form-input" required placeholder="Enter your district">
           </div>
       </div>
 
-      <button type="submit" class="submit_button">Submit</button>
+      <div class="input-group">
+          <label class="input-label" for="courseWillingness">COURSE WILLINGNESS <span class="required-mark">*</span></label>
+          <select id="courseWillingness" name="courseWillingness" class="form-select" required>
+              <option value="">Select your Preferred Course</option>
+              <option disabled selected>Select an Course</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Engg">Engineering</option>
+                        <option value="Law">Law</option>
+                        <option value="Agri">Agriculture</option>
+                        <option value="Fisheries">Fisheries</option>
+                        <option value="Arts">Arts & Science</option>
+                        <option value="Poly">Polytechinc</option>
+          </select>
+      </div>
+
+      <button type="submit" class="submit-button" id="submitButton">Submit Registration</button>
+      <div class="loading" id="loadingIndicator"></div>
   </form>
 </div>
 
@@ -353,7 +342,15 @@
   </footer>
 </div>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+  });
+</script>
 <script src="/frontend/js/register.js"></script>
+<script src="/frontend/js/footer.js"></script>
 
 </body>
 </body>
