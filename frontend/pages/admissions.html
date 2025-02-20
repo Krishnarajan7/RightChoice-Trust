@@ -18,42 +18,43 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- AOS (Animation On Scroll) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> -->
 
 
 </head>
 <body>
-  <div class="top-bar">
-    <div class="top-content">
-      <div class="logo">
-        <img src="/frontend/public/images/RIGHTCHOICE.jpg" alt="Right Choice Logo" class="logo-img">
-        <div>
-            <span class="right">RIGHT</span> <span class="choice">CHOICE</span>
-        </div>
-        <div class="info-item">
-            <p>Educational & Charitable Trust</p>
-        </div>
+  <header class="rct_header">
+    <div class="rct_top_info">
+      <div class="rct_contact_details">
+        <span class="rct_contact_item"><i class="fas fa-phone"></i> 90959 29553</span>
+        <span class="rct_contact_item"><i class="fas fa-envelope"></i> founder@rightchoicetrust.com</span>
+        <span class="rct_contact_item"><i class="fas fa-location-dot"></i> No 3, Public Office Road, Kala Hotel 1st floor, Nagapattinam </span>
+      </div>
     </div>
-    
-        <div class="contact-info">
-            <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Our Office</span>
-                <p>No 3, Public Office Road, Nagapatiinam.</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-envelope"></i>
-                <span>Email Us</span>
-                <p>rightchoice@example.com</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-phone"></i>
-                <span>Call Us</span>
-                <p>90959 29553</p>
-            </div>
+    <div class="rct_main_header">
+      <div class="rct_main_header_inner">
+        <div class="rct_logo_container">
+          <img src="/frontend/public/images/Round-logo.png" alt="Right Choice Trust Logo" class="rct_logo">
+          <div class="rct_established">
+            <span class="rct_since">Since 2020</span>
+            <span class="rct_reg_number">Reg. No: 44/2020</span>
+          </div>
         </div>
+        
+        <div class="rct_title_container">
+          <h1 class="rct_main_title">Right Choice</h1>
+          <h2 class="rct_subtitle">Educational & Charitable Trust</h2>
+        </div>
+        
+        <div class="rct_social_container">
+          <a href="#" class="rct_social_link" data-tooltip="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://youtube.com/@ramachandranl8870?si=pbgH8FvpNYK7WYs7" class="rct_social_link" data-tooltip="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/rightchoice_trust?igsh=MXF1ZHo5eXIxMGxwNg==" class="rct_social_link" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
     </div>
-</div>
+  </header>
+  <div id="rightChoiceTrustRoot"></div>
 
 <nav class="navbar">
     <div class="nav-content">
@@ -76,8 +77,8 @@
                 <a href="#">What we do <i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-content">
                     <a href="/frontend/pages/team.html"><i class="fas fa-code"></i>Our Team</a>
-                    <a href="#"><i class="fas fa-database"></i>Panel Members</a>
-                    <a href="#"><i class="fas fa-bullhorn"></i>Our Supporters</a>
+                    <!-- <a href="#"><i class="fas fa-database"></i>Panel Members</a> -->
+                    <a href="#"><i class="fas fa-bullhorn"></i>Our Incredibles</a>
                 </div>
             </li>
             <li><a href="#">News & Events</a></li>
@@ -96,10 +97,10 @@
 <div class="admissions-container">
   <header class="admissions-header">
       <h1 class="admissions-title" data-aos="fade-down">
-          95% of our students who have graduated are placed in various top notch companies/organizations.
+          RightChoice Educational & Charitable trust has offered many courses for all the fields across various top institutions.
       </h1>
       <div class="admissions-status" data-aos="fade-up">
-          <p>Admissions closed for the academic year 2024-25.</p>
+          <p>Admissions opened for the academic year 2025-26.</p>
       </div>
   </header>
 
@@ -115,16 +116,34 @@
               </div>
               <div class="course-card__content">
                   <ul class="course-card__list">
-                      <li class="course-card__item">Civil Engineering</li>
-                      <li class="course-card__item">Mechanical Engineering</li>
-                      <li class="course-card__item">Computer Science & Engineering</li>
-                      <li class="course-card__item">Electrical & Electronics Engineering</li>
-                      <li class="course-card__item">Electronics & Communication Engineering</li>
-                      <li class="course-card__item">Information Technology</li>
-                      <li class="course-card__item">Aeronautical Engineering</li>
-                      <li class="course-card__item">Agricultural Engineering</li>
-                      <li class="course-card__item">Artificial Intelligence and Data Science</li>
-                      <li class="course-card__item">Artificial Intelligence and Machine Learning</li>
+                    <li class="course-card__item">Civil Engineering</li>
+                    <li class="course-card__item">Mechanical Engineering</li>
+                    <li class="course-card__item">Computer Science & Engineering</li>
+                    <li class="course-card__item">Electrical & Electronics Engineering</li>
+                    <li class="course-card__item">Electronics & Communication Engineering</li>
+                    <li class="course-card__item">Information Technology</li>
+                    <li class="course-card__item">Aeronautical Engineering</li>
+                    <li class="course-card__item">Agricultural Engineering</li>
+                    <li class="course-card__item">Artificial Intelligence and Data Science</li>
+                    <li class="course-card__item">Artificial Intelligence and Machine Learning</li>
+                    <li class="course-card__item">Automobile Engineering</li>
+                    <li class="course-card__item">Biomedical Engineering</li>
+                    <li class="course-card__item">Biotechnology</li>
+                    <li class="course-card__item">Chemical Engineering</li>
+                    <li class="course-card__item">Computer Science and Communication Engineering</li>
+                    <li class="course-card__item">Computer Science and Business Studies</li>
+                    <li class="course-card__item">Computer Science and Cyber Security</li>
+                    <li class="course-card__item">Computer Science and Design</li>
+                    <li class="course-card__item">Electrical and Instrumentation Engineering</li>
+                    <li class="course-card__item">Electronics and Telecommunication Engineering</li>
+                    <li class="course-card__item">Fashion Technology</li>
+                    <li class="course-card__item">Food Technology</li>
+                    <li class="course-card__item">Instrumentation and Control Engineering</li>
+                    <li class="course-card__item">Internet of Things</li>
+                    <li class="course-card__item">Mechanical and Automation Engineering</li>
+                    <li class="course-card__item">Mechatronics Engineering</li>
+                    <li class="course-card__item">Pharmaceutical Engineering</li>
+                    <li class="course-card__item">Textile Engineering/Technology</li>
                   </ul>
               </div>
           </div>
@@ -155,12 +174,59 @@
               </div>
               <div class="course-card__content">
                   <ul class="course-card__list">
-                      <li class="course-card__item">BA English</li>
-                      <li class="course-card__item">BA Economics</li>
-                      <li class="course-card__item">BSc Mathematics</li>
-                      <li class="course-card__item">BSc Physics</li>
-                      <li class="course-card__item">BSc Chemistry</li>
-                      <li class="course-card__item">BCA</li>
+                    <li class="course-card__item">B. Com</li>
+                    <li class="course-card__item">B. Com (General)</li>
+                    <li class="course-card__item">B. Com (Accounting & Finance)</li>
+                    <li class="course-card__item">B. Com (Professional Accounting)</li>
+                    <li class="course-card__item">B. Com (Business Process Services)</li>
+                    <li class="course-card__item">B. Com (E-Commerce)</li>
+                    <li class="course-card__item">B. Com (Banking and Insurance)</li>
+                    <li class="course-card__item">B. Com (Actuarial Management)</li>
+                    <li class="course-card__item">B. Com (Financial Analysis)</li>
+                    <li class="course-card__item">B. Com (Information Technology)</li>
+                    <li class="course-card__item">B. Com (Bank Management)</li>
+                    <li class="course-card__item">B. Com (Banking & Insurance)</li>
+                    <li class="course-card__item">B. Com (Company Secretary - CS)</li>
+                    <li class="course-card__item">B. Com (Chartered Accountant - CA)</li>
+                    <li class="course-card__item">B. Com (International Business)</li>
+                    <li class="course-card__item">B.C.A (Bachelor of Computer Applications)</li>
+                    <li class="course-card__item">B.B.A (General)</li>
+                    <li class="course-card__item">B.B.A (International Business)</li>
+                    <li class="course-card__item">B.B.M (General)</li>
+                    <li class="course-card__item">B.S.W (Human Resources)</li>
+                
+                    <!-- Science Courses -->
+                    <li class="course-card__item">B. Sc (Mathematics)</li>
+                    <li class="course-card__item">B. Sc (Physics) – UG</li>
+                    <li class="course-card__item">M. Sc (Physics) – PG</li>
+                    <li class="course-card__item">B. Sc (Chemistry)</li>
+                    <li class="course-card__item">B. Sc (IT)</li>
+                    <li class="course-card__item">B. Sc (Computer Science)</li>
+                    <li class="course-card__item">B. Sc (Computer Technology)</li>
+                    <li class="course-card__item">B. Sc (Information Technology)</li>
+                    <li class="course-card__item">B. Sc (International Safety Management)</li>
+                    <li class="course-card__item">B. Sc (Information System Management)</li>
+                    <li class="course-card__item">B. Sc (Electronics and Communication)</li>
+                    <li class="course-card__item">B. Sc (Zoology)</li>
+                    <li class="course-card__item">B. Sc (Hospitality and Catering Management)</li>
+                    <li class="course-card__item">B. Sc (Botany)</li>
+                    <li class="course-card__item">B. Sc (Artificial Intelligence & Machine Learning)</li>
+                    <li class="course-card__item">B. Sc (Data Science)</li>
+                    <li class="course-card__item">B. Sc (Statistics)</li>
+                    <li class="course-card__item">B. Sc (Computer Application)</li>
+                    <li class="course-card__item">B. Sc (Biotechnology)</li>
+                    <li class="course-card__item">B. Sc (Psychology)</li>
+                    <li class="course-card__item">B. Sc (Microbiology)</li>
+                    <li class="course-card__item">B. Sc (Biochemistry)</li>
+                    <li class="course-card__item">B. Sc (Nursing)</li>
+                
+                    <!-- Arts & Humanities Courses -->
+                    <li class="course-card__item">B. A (English Literature)</li>
+                    <li class="course-card__item">B. A (Political Science)</li>
+                    <li class="course-card__item">B. A (Economics)</li>
+                    <li class="course-card__item">B. A (Tamil Literature)</li>
+                    <li class="course-card__item">B. A (Journalism)</li>
+                    <li class="course-card__item">B. A (History)</li>
                   </ul>
               </div>
           </div>
@@ -394,5 +460,6 @@
 <script src="/frontend/js/main.js"></script>
 <script src="/frontend/js/admissions.js"></script>
 <script src="/frontend/js/footer.js"></script>
+<script src="/frontend/js/topbar.js"></script>
 </body>
 </html>
