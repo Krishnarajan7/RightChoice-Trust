@@ -23,38 +23,38 @@
 
 </head>
 <body>
-  <div class="top-bar">
-    <div class="top-content">
-      <div class="logo">
-        <img src="/frontend/public/images/RIGHTCHOICE.jpg" alt="Right Choice Logo" class="logo-img">
-        <div>
-            <span class="right">RIGHT</span> <span class="choice">CHOICE</span>
-        </div>
-        <div class="info-item">
-            <p>Educational & Charitable Trust</p>
-        </div>
+  <header class="rct_header">
+    <div class="rct_top_info">
+      <div class="rct_contact_details">
+        <span class="rct_contact_item"><i class="fas fa-phone"></i> 90959 29553</span>
+        <span class="rct_contact_item"><i class="fas fa-envelope"></i> founder@rightchoicetrust.com</span>
+        <span class="rct_contact_item"><i class="fas fa-location-dot"></i> No 3, Public Office Road, Kala Hotel 1st floor, Nagapattinam </span>
+      </div>
     </div>
-    
-        <div class="contact-info">
-            <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Our Office</span>
-                <p>No 3, Public Office Road, Nagapatiinam.</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-envelope"></i>
-                <span>Email Us</span>
-                <p>rightchoice@example.com</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-phone"></i>
-                <span>Call Us</span>
-                <p>90959 29553</p>
-            </div>
+    <div class="rct_main_header">
+      <div class="rct_main_header_inner">
+        <div class="rct_logo_container">
+          <img src="/frontend/public/images/Round-logo.png" alt="Right Choice Trust Logo" class="rct_logo">
+          <div class="rct_established">
+            <span class="rct_since">Since 2020</span>
+            <span class="rct_reg_number">Reg. No: 44/2020</span>
+          </div>
         </div>
+        
+        <div class="rct_title_container">
+          <h1 class="rct_main_title">Right Choice</h1>
+          <h2 class="rct_subtitle">Educational & Charitable Trust</h2>
+        </div>
+        
+        <div class="rct_social_container">
+          <a href="#" class="rct_social_link" data-tooltip="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://youtube.com/@ramachandranl8870?si=pbgH8FvpNYK7WYs7" class="rct_social_link" data-tooltip="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/rightchoice_trust?igsh=MXF1ZHo5eXIxMGxwNg==" class="rct_social_link" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
     </div>
-</div>
-
+  </header>
+  <div id="rightChoiceTrustRoot"></div>
 <nav class="navbar">
     <div class="nav-content">
 
@@ -64,23 +64,6 @@
                 <i class="fa-solid fa-graduation-cap"></i>
             </button>
         </a>
-        <!-- <div class="subjects-dropdown">
-            <button class="subjects-btn">
-                <i class="fas fa-book"></i>
-                Register for Scholarship
-                <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#"><i class="fas fa-calculator"></i>Medical</a>
-                <a href="#"><i class="fas fa-flask"></i>Engineering</a>
-                <a href="#"><i class="fas fa-language"></i>Agriculture</a>
-                <a href="#"><i class="fas fa-landmark"></i>Fisheries</a>
-                <a href="#"><i class="fas fa-laptop-code"></i>Laws</a>
-                <a href="#"><i class="fas fa-laptop-code"></i>Arts & Science</a>
-                <a href="#"><i class="fas fa-laptop-code"></i>Polytechinc</a>
-            </div>
-        </div> -->
-
         <div class="hamburger">
             <span></span>
             <span></span>
@@ -89,18 +72,18 @@
 
         <ul class="nav-links">
             <li><a href="/index.html" >Home</a></li>
-            <li><a href="#">Admissions</a></li>
+            <li><a href="/frontend/pages/admissions.html">Admissions</a></li>
             <li class="courses-dropdown">
-                <a href="#" class="active">What we do <i class="fas fa-chevron-down"></i></a>
+                <a href="#" >What we do <i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-content">
                     <a href="/frontend/pages/team.html"><i class="fas fa-code"></i>Our Team</a>
-                    <a href="#"><i class="fas fa-database"></i>Panel Members</a>
-                    <a href="#"><i class="fas fa-bullhorn"></i>Our Supporters</a>
+                    <!-- <a href="#"><i class="fas fa-database"></i>Panel Members</a> -->
+                    <a href="#"><i class="fas fa-bullhorn"></i>Our Incredibles</a>
                 </div>
             </li>
             <li><a href="#">News & Events</a></li>
             <li><a href="/frontend/pages/gallery.html">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" class="active">Contact Us</a></li>
         </ul>
 
         <button class="call-now-btn">
@@ -123,22 +106,22 @@
       <div class="checkbox-group">
         <label class="checkbox-container">
           <input type="checkbox" name="purpose" value="donate">
-          <span class="checkbox-text">I'd like to donate</span>
+          <span class="checkbox-text">I want to refer a student</span>
         </label>
         
         <label class="checkbox-container">
           <input type="checkbox" name="purpose" value="admissions">
-          <span class="checkbox-text">I want to offer admissions in my institutions</span>
+          <span class="checkbox-text">I would like to donate in your trust</span>
         </label>
         
         <label class="checkbox-container">
           <input type="checkbox" name="purpose" value="library">
-          <span class="checkbox-text">My neighborhood needs a library</span>
+          <span class="checkbox-text">I want to offer admissions in your trust</span>
         </label>
         
         <label class="checkbox-container">
           <input type="checkbox" name="purpose" value="refer">
-          <span class="checkbox-text">I want to refer a kid</span>
+          <span class="checkbox-text">I want to be a member in your trust</span>
         </label>
       </div>
       
@@ -303,6 +286,8 @@
 </div>
 </footer>
 <script src="/frontend/js/contact.js"></script>
+<script src="/frontend/js/main.js"></script>
+<script src="/frontend/js/topbar.js"></script>
 
 </body>
 </body>
