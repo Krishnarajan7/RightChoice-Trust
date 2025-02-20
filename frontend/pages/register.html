@@ -23,38 +23,38 @@
 
 </head>
 <body>
-  <div class="top-bar">
-    <div class="top-content">
-      <div class="logo">
-        <img src="/frontend/public/images/RIGHTCHOICE.jpg" alt="Right Choice Logo" class="logo-img">
-        <div>
-            <span class="right">RIGHT</span> <span class="choice">CHOICE</span>
-        </div>
-        <div class="info-item">
-            <p>Educational & Charitable Trust</p>
-        </div>
+  <header class="rct_header">
+    <div class="rct_top_info">
+      <div class="rct_contact_details">
+        <span class="rct_contact_item"><i class="fas fa-phone"></i> 90959 29553</span>
+        <span class="rct_contact_item"><i class="fas fa-envelope"></i> founder@rightchoicetrust.com</span>
+        <span class="rct_contact_item"><i class="fas fa-location-dot"></i> No 3, Public Office Road, Kala Hotel 1st floor, Nagapattinam </span>
+      </div>
     </div>
-    
-        <div class="contact-info">
-            <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Our Office</span>
-                <p>No 3, Public Office Road, Nagapatiinam.</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-envelope"></i>
-                <span>Email Us</span>
-                <p>rightchoice@example.com</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-phone"></i>
-                <span>Call Us</span>
-                <p>90959 29553</p>
-            </div>
+    <div class="rct_main_header">
+      <div class="rct_main_header_inner">
+        <div class="rct_logo_container">
+          <img src="/frontend/public/images/Round-logo.png" alt="Right Choice Trust Logo" class="rct_logo">
+          <div class="rct_established">
+            <span class="rct_since">Since 2010</span>
+            <span class="rct_reg_number">Reg. No: TN/2010/12345</span>
+          </div>
         </div>
+        
+        <div class="rct_title_container">
+          <h1 class="rct_main_title">Right Choice</h1>
+          <h2 class="rct_subtitle">Educational & Charitable Trust</h2>
+        </div>
+        
+        <div class="rct_social_container">
+          <a href="#" class="rct_social_link" data-tooltip="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://youtube.com/@ramachandranl8870?si=pbgH8FvpNYK7WYs7" class="rct_social_link" data-tooltip="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/rightchoice_trust?igsh=MXF1ZHo5eXIxMGxwNg==" class="rct_social_link" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
     </div>
-</div>
-
+  </header>
+  <div id="rightChoiceTrustRoot"></div>
 <nav class="navbar" data-aos="zoom-out">
     <div class="nav-content">
 
@@ -151,8 +151,8 @@
                   <option value="PCMC">Pysics,Chemsitry,Maths,Computer Science</option>
                   <option value="PCBC">Pysics,Chemsitry,Biology,Computer Science</option>
                   <option value="PCBZ">Pysics,Chemsitry,Botony,Zoology</option>
-                  <option value="M-VOC">M-VOC</option>
-                  <option value="ARTS">ARTS</option>
+                  <option value="M-VOC">Maths,Theory,Practical</option>
+                  <option value="ARTS">Other Arts Groups</option>
               </select>
           </div>
       </div>
@@ -351,6 +351,8 @@
 </script>
 <script src="/frontend/js/register.js"></script>
 <script src="/frontend/js/footer.js"></script>
+<script src="/frontend/js/main.js"></script>
+<script src="/frontend/js/topbar.js"></script>
 
 </body>
 </body>
