@@ -36,8 +36,8 @@
         <div class="rct_logo_container">
           <img src="/frontend/public/images/Round-logo.png" alt="Right Choice Trust Logo" class="rct_logo">
           <div class="rct_established">
-            <span class="rct_since">Since 2010</span>
-            <span class="rct_reg_number">Reg. No: TN/2010/12345</span>
+            <span class="rct_since">Since 2020</span>
+            <span class="rct_reg_number">Reg. No: 44.2020</span>
           </div>
         </div>
         
@@ -50,14 +50,15 @@
           <a href="#" class="rct_social_link" data-tooltip="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           <a href="https://youtube.com/@ramachandranl8870?si=pbgH8FvpNYK7WYs7" class="rct_social_link" data-tooltip="YouTube"><i class="fab fa-youtube"></i></a>
           <a href="https://www.instagram.com/rightchoice_trust?igsh=MXF1ZHo5eXIxMGxwNg==" class="rct_social_link" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+          <!-- <a href="#" class="rct_social_link" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
         </div>
       </div>
     </div>
   </header>
   <div id="rightChoiceTrustRoot"></div>
-<nav class="navbar" data-aos="zoom-out">
-    <div class="nav-content">
 
+<nav class="navbar">
+    <div class="nav-content">
         <a href="/frontend/pages/register.html">
             <button class="call-now-btns">
                 <span>Register for Scholarships</span>
@@ -71,19 +72,19 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="/index.html" class="active">Home</a></li>
-            <li><a href="#">Admissions</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="/frontend/pages/admissions.html">Admissions</a></li>
             <li class="courses-dropdown">
                 <a href="#">What we do <i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-content">
                     <a href="/frontend/pages/team.html"><i class="fas fa-code"></i>Our Team</a>
-                    <a href="#"><i class="fas fa-database"></i>Panel Members</a>
-                    <a href="/frontend/pages/supporters.html"><i class="fas fa-bullhorn"></i>Our Supporters</a>
+                    <!-- <a href="#"><i class="fas fa-database"></i>Panel Members</a> -->
+                    <a href="#"><i class="fas fa-bullhorn"></i>Our Incredibles</a>
                 </div>
             </li>
             <li><a href="#">News & Events</a></li>
             <li><a href="/frontend/pages/gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="/frontend/pages/contact.html">Contact Us</a></li>
         </ul>
 
         <button class="call-now-btn">
@@ -92,6 +93,7 @@
         </button>
     </div>
 </nav>
+
 
 <div class="registration-container" data-aos="fade-up">
   <div class="alert alert-success" id="successAlert">Registration submitted successfully!</div>
@@ -139,6 +141,7 @@
                   <option value="BCM">BCM</option>
                   <option value="MBC & DNC">MBC & DNC</option>
                   <option value="SC">SC</option>
+                  <option value="SCT">SCA</option>
                   <option value="ST">ST</option>
               </select>
           </div>
@@ -189,6 +192,7 @@
   </form>
 </div>
 
+<!-- footer -->
 <div id="educational-trust-container">
   <footer class="edu-footer">
     <div class="edu-footer__wave-container">
@@ -215,7 +219,7 @@
           <div class="edu-footer__stat-item">
             <i class="fas fa-chalkboard-teacher"></i>
             <span>2000+</span>
-            <p>Meical Students</p>
+            <p>Medical Students</p>
           </div>
           <div class="edu-footer__stat-item">
             <i class="fas fa-award"></i>
@@ -229,25 +233,25 @@
         <h3 class="edu-footer__heading">Quick Links</h3>
         <ul class="edu-footer__list">
           <li class="edu-footer__list-item">
-            <a href="#" class="edu-footer__link"><i class="fas fa-graduation-cap"></i> Home</a>
+            <a href="/index.html" class="edu-footer__link"><i class="fas fa-graduation-cap"></i> Home</a>
           </li>
           <li class="edu-footer__list-item">
-            <a href="#" class="edu-footer__link"><i class="fas fa-book-reader"></i>What We Do</a>
+            <a href="/frontend/pages/team.html" class="edu-footer__link"><i class="fas fa-book-reader"></i>What We Do</a>
           </li>
           <li class="edu-footer__list-item">
-            <a href="#" class="edu-footer__link"><i class="fas fa-calendar-alt"></i>News & Events</a>
+            <a href="#" class="edu-footer__link"><i class="fas fa-calendar-alt"></i> Events</a>
           </li>
           <li class="edu-footer__list-item">
-            <a href="#" class="edu-footer__link"><i class="fas fa-users"></i>Gallery</a>
+            <a href="/frontend/pages/gallery.html" class="edu-footer__link"><i class="fas fa-users"></i>Gallery</a>
           </li>
           <li class="edu-footer__list-item">
-            <a href="#" class="edu-footer__link"><i class="fas fa-chalkboard-teacher"></i>Our Supporters</a>
+            <a href="/frontend/pages/supporters.html" class="edu-footer__link"><i class="fas fa-chalkboard-teacher"></i>Our Supporters</a>
           </li>
           <li class="edu-footer__list-item">
-            <a href="#" class="edu-footer__link"><i class="fas fa-microscope"></i> Scholarships</a>
+            <a href="/frontend/pages/register.html" class="edu-footer__link"><i class="fas fa-microscope"></i> Scholarships</a>
           </li>
           <li class="edu-footer__list-item">
-            <a href="#" class="edu-footer__link"><i class="fas fa-medal"></i> Admissions</a>
+            <a href="/frontend/pages/admissions.html" class="edu-footer__link"><i class="fas fa-medal"></i> Admissions</a>
           </li>
           <li class="edu-footer__list-item">
             <a href="#" class="edu-footer__link"><i class="fas fa-hands-helping"></i> Neet Coaching</a>
@@ -269,7 +273,7 @@
             <i class="fas fa-envelope edu-footer__contact-icon"></i>
             <div class="edu-footer__contact-details">
               <span class="edu-footer__contact-label">Email Us:</span>
-              <span class="edu-footer__contact-value">founder@rightchoice.edu</span>
+              <span class="edu-footer__contact-value">founder@rightchoice.com</span>
             </div>
           </li>
           <li class="edu-footer__contact-item">
@@ -306,23 +310,23 @@
 
     <div class="edu-footer__bottom">
       <div class="edu-footer__social">
-        <a href="#" class="edu-footer__social-link">
+        <!-- <a href="#" class="edu-footer__social-link">
           <i class="fab fa-facebook"></i>
           <span class="edu-footer__social-tooltip">Facebook</span>
         </a>
         <a href="#" class="edu-footer__social-link">
           <i class="fab fa-twitter"></i>
           <span class="edu-footer__social-tooltip">Twitter</span>
-        </a>
-        <a href="#" class="edu-footer__social-link">
+        </a> -->
+        <a href="https://www.instagram.com/rightchoice_trust?igsh=MXF1ZHo5eXIxMGxwNg==" class="edu-footer__social-link">
           <i class="fab fa-instagram"></i>
           <span class="edu-footer__social-tooltip">Instagram</span>
         </a>
         <a href="#" class="edu-footer__social-link">
-          <i class="fab fa-linkedin"></i>
-          <span class="edu-footer__social-tooltip">LinkedIn</span>
+          <i class="fab fa-whatsapp"></i>
+          <span class="edu-footer__social-tooltip">WhatsApp</span>
         </a>
-        <a href="#" class="edu-footer__social-link">
+        <a href="https://youtube.com/@ramachandranl8870?si=pbgH8FvpNYK7WYs7" class="edu-footer__social-link">
           <i class="fab fa-youtube"></i>
           <span class="edu-footer__social-tooltip">YouTube</span>
         </a>
@@ -341,7 +345,7 @@
     </div>
   </footer>
 </div>
-</footer>
+</footer> 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
