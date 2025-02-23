@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <!-- AOS (Animation On Scroll) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> -->
   
   <!-- Google Font: Poppins -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
@@ -71,37 +71,52 @@
 
   <section class="marque">
     <div class="marquee-text">
-      Location: <b>No. 3, Public Office Road,</b> Kala Hotel 1st floor, (Devi theatre opposite) <b>Nagapattinam - 611001</b>.
+      <b>Admissions open </b> for the academic  year of 2025 - 2026. Attend the <b>Scholarship meetup</b> for more details.</b>.
     </div>
   </section>
   <!-- this is my navbar -->
   <header class="rct_header">
-    <div class="rct_top_info">
+    <!-- <div class="rct_top_info">
       <div class="rct_contact_details">
         <span class="rct_contact_item"><i class="fas fa-phone"></i> 90959 29553</span>
         <span class="rct_contact_item"><i class="fas fa-envelope"></i> founder@rightchoicetrust.com</span>
         <span class="rct_contact_item"><i class="fas fa-location-dot"></i> No 3, Public Office Road, Kala Hotel 1st floor, Nagapattinam </span>
       </div>
-    </div>
+    </div> -->
     <div class="rct_main_header">
       <div class="rct_main_header_inner">
         <div class="rct_logo_container">
           <img src="/frontend/public/images/Round-logo.png" alt="Right Choice Trust Logo" class="rct_logo">
           <div class="rct_established">
             <span class="rct_since">Since 2020</span>
-            <span class="rct_reg_number">Reg. No: 44.2020</span>
+            <span class="rct_reg_number">Reg. No: 44/2020</span>
           </div>
         </div>
         
         <div class="rct_title_container">
           <h1 class="rct_main_title">Right Choice</h1>
           <h2 class="rct_subtitle">Educational & Charitable Trust</h2>
+          <div class="rct_submain">
+            <div class="rct-contact-item">
+              <i class="fas fa-phone"></i>
+              <span>90959 29553</span>
+          </div>
+      
+          <div class="rct-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>No 3, Public Office Road, Kala Hotel 1st floor, Nagapattinam</span>
+          </div>
+          <div class="rct-contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:founder@rightchoicetrust.com">founder@rightchoicetrust.com</a>
+          </div>
+          </div>
         </div>
         
         <div class="rct_social_container">
-          <a href="#" class="rct_social_link" data-tooltip="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://youtube.com/@ramachandranl8870?si=pbgH8FvpNYK7WYs7" class="rct_social_link" data-tooltip="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.instagram.com/rightchoice_trust?igsh=MXF1ZHo5eXIxMGxwNg==" class="rct_social_link" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="rct_social_link rct_whatsapp" data-tooltip="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://youtube.com/@ramachandranl8870?si=pbgH8FvpNYK7WYs7" class="rct_social_link rct_youtube" data-tooltip="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/rightchoice_trust?igsh=MXF1ZHo5eXIxMGxwNg==" class="rct_social_link rct_instagram" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
           <!-- <a href="#" class="rct_social_link" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
         </div>
       </div>
@@ -134,7 +149,7 @@
                     <a href="#"><i class="fas fa-bullhorn"></i>Our Incredibles</a>
                 </div>
             </li>
-            <li><a href="#">News & Events</a></li>
+            <li><a href="#"> Events</a></li>
             <li><a href="/frontend/pages/gallery.html">Gallery</a></li>
             <li><a href="/frontend/pages/contact.html">Contact Us</a></li>
         </ul>
@@ -296,8 +311,6 @@
               <div class="shape shape-2"></div>
           </div>
       </div>
-
-
       <div class="card" data-tilt>
           <div class="card-content">
               <div class="icon-wrapper">
@@ -381,9 +394,6 @@
             <div class="shape shape-2"></div>
         </div>
     </div>
-
-
-
       <div class="card" data-tilt>
           <div class="card-content">
               <div class="icon-wrapper">
@@ -469,31 +479,25 @@
     </section>
     <!-- founder design -->
 
-    <div id="executive-spotlight-app">
-      <div class="spotlight-header">
-        <h1>What Our Founder Says</h1>
-        <div class="spotlight-subheading">Insights from our visionary leader</div>
-      </div>
-      <div class="executive-quote-wrapper">
-        <div class="executive-profile-section">
-          <img src="/frontend/public/images/sirimage.png" alt="Executive Portrait">
-          <div class="executive-details">
-            <h2>Dr. L. Ramachandran, M.Tech., Ph.D.,
-            </h2>
-            <p class="executive-position">Chairman & CEO</p>
-            <p class="executive-company">Right Choice Educational & Charitable Trust
-            </p>
+    <div class="founder-page-container">
+      <h1 class="founder-page-title" data-aos="fade-down">What Our Founder Says</h1>
+      <div class="founder-showcase">
+        <div class="founder-info-wrapper" data-aos="fade-right" data-aos-delay="100">
+          <h2 class="founder-info-name">Dr.L.Ramachandran, M.Tech.,Ph.D.,</h2>
+          <p class="founder-info-role">Founder & CEO</p>
+          <div class="founder-quote-box">
+            <p>"Innovation and dedication are the cornerstones of our success. We believe in creating solutions that make a difference in people's lives."</p>
+          </div>
+          <div class="founder-social-wrapper">
+            <a href="#" class="founder-social-btn">LinkedIn</a>
+            <a href="#" class="founder-social-btn">Twitter</a>
           </div>
         </div>
-        <div class="executive-quote-section">
-          <div class="quote-symbol quote-symbol-opening">"</div>
-          <p id="executive-quote-text">அச்சம் விடு
-          <br>உச்சம் தொடு..</p>
-          <div class="quote-symbol quote-symbol-closing">"</div>
+        <div class="founder-photo-wrapper" data-aos="fade-left" data-aos-delay="200">
+          <img src="/frontend/public/images/sir_furnished.jpg" alt="Company Founder" id="founderPortrait" />
         </div>
       </div>
     </div>
-
     <!-- footer -->
     <div id="educational-trust-container">
         <footer class="edu-footer">
