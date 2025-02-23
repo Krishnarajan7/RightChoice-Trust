@@ -140,7 +140,6 @@ body.no-scroll .author-animation {
   }
 }
 
-
 /* Navbar design */
 :root {
   --primary-color: #0066cc;
@@ -213,7 +212,7 @@ body.no-scroll .author-animation {
 }
 
 .rct_main_header_inner {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -231,17 +230,19 @@ body.no-scroll .author-animation {
 
 .rct_logo_container {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: flex-start;
   position: relative;
+  width: 300px;
 }
 
 .rct_logo {
-  width: 110px;
+  width: 90px;
   height: auto;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
   position: relative;
   z-index: 2;
+  margin-left: 10px;
   padding: 10px;
   background: linear-gradient(45deg, #4158D0, #C850C0, #FFCC70);
   border-radius: 50%;
@@ -254,36 +255,79 @@ body.no-scroll .author-animation {
 
 .rct_established {
   display: flex;
+  width: 110px;
   flex-direction: column;
-  margin-top: 48px;
-  margin-left: 12px;
+  margin-top: 8px;
+  margin-left: 9px;
   padding-left: 5px;
+  border-radius: 10px;
+  border-right: 3px solid #0077b6;
   border-left: 3px solid #0077B6;
 }
 
 .rct_since {
-  color: #0D3B66;
+  color: #000428;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
 .rct_reg_number {
-  color: #003f87;
+  color: #000;;
   font-size: 12px;
   opacity: 0.9;
 }
 
 .rct_title_container {
-  margin-right: 50px;
   text-align: center;
   flex-grow: 1;
   padding: 0 40px;
   position: relative;
 }
+.rct_submain{
+  display: flex;
+  justify-content: center;
+  background-color:#90caf9;
+  display: flex;
+  border-radius: 4px;
+  width: 890px;
+  position: relative;
+  top: 10px;
+  gap: 2rem;
+}
+
+.rct-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #000428;
+  flex-shrink: 0;
+}
+
+.rct-contact-item i {
+  color: #000428;
+  font-size: 0.7em;
+}
+
+.rct-contact-item a {
+  text-decoration: none;
+  color: #000428;
+  transition: color 0.3s ease;
+}
+
+.rct-contact-item a:hover {
+  color: #0066cc;
+}
+
+.rct-contact-divider {
+  color: #0066cc;
+  font-size: 0.8em;
+  flex-shrink: 0;
+}
 
 .rct_main_title {
-  font-size: 52px;
+  font-size: 42px;
   margin: 0;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -350,7 +394,7 @@ body.no-scroll .author-animation {
 }
 
 .rct_social_link {
-  color: #01579b;
+  color: #fff;
   font-size: 22px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
@@ -362,6 +406,20 @@ body.no-scroll .author-animation {
   border-radius: 50%;
   background: rgba(255, 0, 128, 0.1);
   overflow: hidden;
+}
+
+.rct_whatsapp{
+  background: linear-gradient(45deg, #25D366, #128C7E);
+
+}
+
+.rct_youtube{
+  background: linear-gradient(45deg, #FF0000, #C90000);
+
+}
+
+.rct_instagram{
+  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
 }
 
 .rct_social_link:hover {
@@ -395,6 +453,7 @@ body.no-scroll .author-animation {
   }
   .rct_logo{
     width: 80px;
+    margin: 0px;
   }
 
   .rct_title_container{
@@ -475,6 +534,7 @@ body.no-scroll .author-animation {
   
   .rct_logo {
     max-width:80px;
+    margin: 0px;
   }
 }
 /* Navbar Styles */
