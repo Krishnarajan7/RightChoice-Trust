@@ -1,28 +1,28 @@
 // Team members data
 const teamMembers = [
   {
-      name: 'Sarah Johnson',
-      position: 'Technical Director',
-      image: 'https://placehold.co/150x150',
-      description: 'Leading our technical initiatives with expertise in software architecture and team leadership. Passionate about emerging technologies and scalable solutions.'
+    name: 'L.Thanasekar',
+    position: 'Co-Founder',
+    image: '/frontend/public/images/thanasekar.jpg',
+    description: 'Right Choice Education, 2/18 bharti nagar, Kutralam main road, Melagaram, Tenkasi - 627818'
+ },
+ {
+      name: 'Dr.Sivakumar.',
+      position: 'Global Delta Edu Life Services',
+      image: '/frontend/public/images/sivakumar.jpg',
+      description: 'P.N.Palayam, Coimbatore.'
   },
   {
-      name: 'Michael Chen',
-      position: 'Creative Director',
-      image: 'https://placehold.co/150x150',
-      description: 'Bringing creative vision and innovation to our projects. Over 10 years of experience in design and brand strategy.'
+      name: 'Dr.A.ArjunanDCE,B.E,M.E.Ph.D',
+      position: 'Structural Engineer, KRA Civil and structural consultant',
+      image: '/frontend/public/images/arjunan.jpg',
+      description: 'Medical College road, Tanjavur.'
   },
   {
-      name: 'Emily Rodriguez',
-      position: 'Senior Developer',
-      image: 'https://placehold.co/150x150',
-      description: 'Expert in full-stack development with a focus on creating efficient and maintainable code. Leading our core development initiatives.'
-  },
-  {
-      name: 'David Kim',
-      position: 'UX Designer',
-      image: 'https://placehold.co/150x150',
-      description: 'Creating intuitive and engaging user experiences. Specializes in user research and interaction design.'
+      name: 'S.Mohamed Naina Maricar., MBA.,LLB.',
+      position: 'MNM Law Association',
+      image: '/frontend/public/images/advocate.jpg',
+      description: '458 Main Road,Nagore - 611002'
   }
 ];
 
