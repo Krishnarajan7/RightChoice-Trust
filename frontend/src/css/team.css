@@ -2,6 +2,7 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 3rem 2rem;
+  font-family: 'Poppins',serif;
 }
 
 .team-section-heading {
@@ -62,7 +63,12 @@
 .team-section-member-image {
   flex-shrink: 0;
   position: relative;
+  object-fit: cover;;
   z-index: 1;
+}
+
+.team-section-member-image{
+
 }
 
 .team-section-founder .team-section-member-image::after {
@@ -95,7 +101,7 @@
 }
 
 .team-section-member-image img {
-  width: 300px;
+  width: 10;
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
