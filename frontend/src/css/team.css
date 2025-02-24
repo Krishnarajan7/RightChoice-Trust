@@ -67,9 +67,6 @@
   z-index: 1;
 }
 
-.team-section-member-image{
-
-}
 
 .team-section-founder .team-section-member-image::after {
   content: '';
@@ -101,7 +98,6 @@
 }
 
 .team-section-member-image img {
-  width: 10;
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
@@ -190,8 +186,8 @@
 }
 
 .team-section-grid .team-section-member-image img {
-  width: 180px;
-  height: 180px;
+  max-width: 50%;
+  height: auto;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid white;
@@ -220,12 +216,26 @@
   letter-spacing: 1px;
 }
 
+.team-section-grid .team-section-member-info h6 {
+  color: #2c3e50;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
 .team-section-grid .team-section-member-info p {
   color: #666;
   line-height: 1.6;
   font-size: 0.95rem;
   padding: 0 1rem;
 }
+
+.degree {
+  font-size: 0.8em;
+  color: gray; /* Optional: Makes it look subtle */
+}
+
 
 /* Responsive Design */
 @media (max-width: 1200px) {
