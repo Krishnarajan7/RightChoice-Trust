@@ -1,28 +1,32 @@
 // Team members data
 const teamMembers = [
   {
-    name: 'L.Thanasekar',
-    position: 'Co-Founder',
-    image: '/frontend/public/images/thanasekar.jpg',
-    description: 'Right Choice Education, 2/18 bharti nagar, Kutralam main road, Melagaram, Tenkasi - 627818'
+    name: 'L.Thanasekar.',
+    degree: 'B.E,M.E - MEchanical Engineer',
+    position: 'CEO',
+    image: '/frontend/public/images/thanasekar_rm.png',
+    description: '2/18 bharti nagar, Kutralam main road, Melagaram, Tenkasi - 627818'
  },
  {
       name: 'Dr.Sivakumar.',
-      position: 'Global Delta Edu Life Services',
+      degree: 'M.E,.Ph.D',
+      position: 'Career Advisor',
       image: '/frontend/public/images/sivakumar.jpg',
       description: 'P.N.Palayam, Coimbatore.'
   },
   {
-      name: 'Dr.A.ArjunanDCE,B.E,M.E.Ph.D',
-      position: 'Structural Engineer, KRA Civil and structural consultant',
-      image: '/frontend/public/images/arjunan.jpg',
+      name: 'Dr.A.Arjunan.',
+      degree: 'DCE,B.E,M.E.Ph.D',
+      position: 'Scholarships Organizer',
+      image: '/frontend/public/images/arjunan_rm.png',
       description: 'Medical College road, Tanjavur.'
   },
   {
-      name: 'S.Mohamed Naina Maricar., MBA.,LLB.',
-      position: 'MNM Law Association',
-      image: '/frontend/public/images/advocate.jpg',
-      description: '458 Main Road,Nagore - 611002'
+      name: 'S.Mohamed Naina Maricar.',
+      degree:'MBA.,LLB.',
+      position: 'Legal Analyzer',
+      image: '/frontend/public/images/advocate_rm.png',
+      description: '458 Main Road,Nagore,Nagapattinam - 611002'
   }
 ];
 
@@ -35,6 +39,7 @@ function createTeamMemberCard(member) {
           </div>
           <div class="team-section-member-info">
               <h2>${member.name}</h2>
+              <h6>${member.degree}</h6>
               <h3>${member.position}</h3>
               <p>${member.description}</p>
           </div>
