@@ -5,59 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Right Choice is a modern and responsive website designed to help students explore college admission opportunities and career guidance.">
   <meta name="keywords" content="Right Choice trust, Right Choice charity Nagapattinam">
-  <title>Scholarships-Register Form</title>
+  <title>RightChoice</title>
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="/frontend/src/css/style.css">
+  <link rel="stylesheet" href="/frontend/src/css/responsiveness.css">
   <link rel="stylesheet" href="/frontend/src/css/footer.css">
   <link rel="stylesheet" href="/frontend/src/css/supporters.css">
-
+  
   
   <!-- Favicon -->
   <link rel="icon" href="/frontend/public/images/IMG-20250207-WA0011.jpg">
   
   <!-- Font Awesome (Latest Version 6.5.1) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+  
   <!-- AOS (Animation On Scroll) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> -->
+  
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+      /* Ripple effect styles */
+      .ripple-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        border-radius: inherit;
+        pointer-events: none;
+      }
+      
+      .ripple {
+        position: absolute;
+        border-radius: 50%;
+        transform: scale(0);
+        animation: ripple 0.6s linear;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      
+      @keyframes ripple {
+        to {
+          transform: scale(4);
+          opacity: 0;
+        }
+      }
+      
+      .resize-animation-stopper * {
+        transition: none !important;
+      }
+    </style>
+  
 </head>
-<body>
-  <div class="top-bar">
-    <div class="top-content">
-      <div class="logo">
-        <img src="/frontend/public/images/RIGHTCHOICE.jpg" alt="Right Choice Logo" class="logo-img">
-        <div>
-            <span class="right">RIGHT</span> <span class="choice">CHOICE</span>
-        </div>
-        <div class="info-item">
-            <p>Educational & Charitable Trust</p>
-        </div>
+  <body>
+    <div class="back-to-top-btn">
+      <div class="show-scroll-btn"></div>
     </div>
-    
-        <div class="contact-info">
-            <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Our Office</span>
-                <p>No 3, Public Office Road, Nagapatiinam.</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-envelope"></i>
-                <span>Email Us</span>
-                <p>rightchoice@example.com</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-phone"></i>
-                <span>Call Us</span>
-                <p>90959 29553</p>
-            </div>
-        </div>
+
+  <section class="marque">  
+    <div class="marquee-text">
+      <b>Admissions open </b> for the academic  year of 2025 - 2026. Attend the <b>Scholarship meetup</b> for more details.</b>.
     </div>
-</div>
+  </section>
+  <!-- this is my navbar -->
+  <header class="rct_header">
+    <div class="rct_main_header">
+      <div class="rct_main_header_inner">
+        <div class="rct_logo_container">
+          <img src="/frontend/public/images/Round-logo.png" alt="Right Choice Trust Logo" class="rct_logo">
+          <div class="rct_established">
+            <span class="rct_since">Since 2020</span>
+            <span class="rct_reg_number">Reg. No: 44/2020</span>
+          </div>
+        </div>
+        
+        <div class="rct_title_container">
+          <h1 class="rct_main_title">Right Choice</h1>
+          <h2 class="rct_subtitle">Educational & Charitable Trust</h2>
+          <div class="rct_submain">
+            <div class="rct-contact-item">
+              <i class="fas fa-phone"></i>
+              <span>90959 29553</span>
+          </div>
+          <div class="rct-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>No 3, Public Office Road, Kala Hotel 1st floor, Nagapattinam</span>
+          </div>
+          <div class="rct-contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:founder@rightchoicetrust.com">founder@rightchoicetrust.com</a>
+          </div>
+          </div>
+        </div>
+        
+        <div class="rct_social_container">
+          <a href="#" class="rct_social_link rct_whatsapp" data-tooltip="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://youtube.com/@ramachandranl8870?si=pbgH8FvpNYK7WYs7" class="rct_social_link rct_youtube" data-tooltip="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/rightchoice_trust?igsh=MXF1ZHo5eXIxMGxwNg==" class="rct_social_link rct_instagram" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+          <!-- <a href="#" class="rct_social_link" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="rightChoiceTrustRoot"></div>
 
 <nav class="navbar">
     <div class="nav-content">
-
         <a href="/frontend/pages/register.html">
             <button class="call-now-btns">
                 <span>Register for Scholarships</span>
@@ -71,19 +130,19 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="/index.html" >Home</a></li>
-            <li><a href="/frontend/pages/admissions.html" >Admissions</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/frontend/pages/admissions.html">Admissions</a></li>
             <li class="courses-dropdown">
                 <a href="#" class="active">What we do <i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-content">
                     <a href="/frontend/pages/team.html"><i class="fas fa-code"></i>Our Team</a>
                     <!-- <a href="#"><i class="fas fa-database"></i>Panel Members</a> -->
-                    <a href="#" ><i class="fas fa-bullhorn"></i>Our Supporters</a>
+                    <a href="#"><i class="fas fa-bullhorn"></i>Our Incredibles</a>
                 </div>
             </li>
-            <li><a href="#">News & Events</a></li>
+            <li><a href="#"> Events</a></li>
             <li><a href="/frontend/pages/gallery.html">Gallery</a></li>
-            <li><a href="/frontend/pages/contact.html" >Contact Us</a></li>
+            <li><a href="/frontend/pages/contact.html">Contact Us</a></li>
         </ul>
 
         <button class="call-now-btn">
@@ -93,19 +152,172 @@
     </div>
 </nav>
 
-<!-- photo starts -->
-<div class="supporters-container">
-  <h1 class="supporters-heading">Our Supporting Institutions</h1>
-  <div class="supporters-filter">
-      <button class="supporters-filter-btn active" data-filter="all">All</button>
-      <button class="supporters-filter-btn" data-filter="engineering">Engineering</button>
-      <button class="supporters-filter-btn" data-filter="arts">Arts & Science</button>
-      <button class="supporters-filter-btn" data-filter="medical">Medical</button>
-  </div>
-  <div class="supporters-grid" id="supporters-grid">
-      <!-- Colleges will be added here via JavaScript -->
+<div id="college-explorer">
+  <header class="explorer-header">
+    <h1>Explore College Fields</h1>
+    <p>Discover top colleges across various academic disciplines</p>
+  </header>
+  
+  <div class="field-container">
+    <div class="field-card engineering">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+        </svg>
+      </div>
+      <h2>Engineering</h2>
+      <div class="college-list">
+        <a href="/frontend/assets/pdf's/RCT Engineering college  list 25.pdf" target="_blank" class="college-item">
+          Click to View College List
+        </a>
+      </div>
+      
+      <a href="/frontend/assets/pdf's/RCT Engineering college  list 25.pdf" download="Engineering.pdf">
+        <button class="card-export-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          Export as PDF
+        </button>
+      </a>
+    </div>
+
+    <div class="field-card medical">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 4v16m8-8H4"/>
+        </svg>
+      </div>
+      <h2>Medical Sciences</h2>
+      <div class="college-list">
+        <a href="/frontend/assets/pdf's/RCT Engineering college  list 25.pdf" target="_blank" class="college-item">
+          Click to View College List
+        </a>
+      </div>
+      <a href="/frontend/assets/pdf's/RCT Engineering college  list 25.pdf" download="Engineering.pdf">
+        <button class="card-export-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          Export as PDF
+        </button>
+      </a>
+    </div>
+
+    <div class="field-card business">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
+        </svg>
+      </div>
+      <h2>Arts & Science</h2>
+      <div class="college-list">
+        <a href="/frontend/assets/pdf's/RCT arts and science college list 25.pdf" target="_blank" class="college-item">
+          Click to View College List
+        </a>
+      </div>
+      <a href="/frontend/assets/pdf's/RCT_Fisheries_College_list_25[1].pdf" download="Arts & Science.pdf">
+        <button class="card-export-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          Export as PDF
+        </button>
+      </a>
+    </div>
+
+    <div class="field-card arts">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+        </svg>
+      </div>
+      <h2>Fisheries</h2>
+      <div class="college-list">
+        <a href="/frontend/assets/pdf's/RCT_Fisheries_College_list_25[1].pdf" target="_blank" class="college-item">
+          Click to View College List
+        </a>
+      </div>
+      <a href="/frontend/assets/pdf's/RCT_Fisheries_College_list_25[1].pdf" download="Fisheries.pdf">
+        <button class="card-export-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          Export as PDF
+        </button>
+      </a>
+    </div>
+
+    <div class="field-card law">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 4v16m8-8H4m16 0a8 8 0 11-16 0 8 8 0 0116 0z"/>
+        </svg>
+      </div>
+      <h2>Law</h2>
+      <div class="college-list">
+        <a href="/frontend/assets/pdf's/RCT_Law_college_list_25[1].pdf" target="_blank" class="college-item">
+          Click to View College List
+        </a>
+      </div>
+      <a href="/frontend/assets/pdf's/RCT_Law_college_list_25[1].pdf" download="Law.pdf">
+        <button class="card-export-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          Export as PDF
+        </button>
+      </a>
+    </div>
+
+    <div class="field-card science">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+        </svg>
+      </div>
+      <h2>Agriculture</h2>
+      <div class="college-list">
+        <a href="/frontend/assets/pdf's/RCT_Agricultural_College_list_25[1].pdf" target="_blank" class="college-item">
+          Click to View College List
+        </a>
+      </div>
+      <a href="/frontend/assets/pdf's/RCT_Agricultural_College_list_25[1].pdf" download="Agriculture.pdf">
+        <button class="card-export-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          Export as PDF
+        </button>
+      </a>
+    </div>
+
+    <div class="field-card humanities">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+        </svg>
+      </div>
+      <h2>Polytechnic</h2>
+      <div class="college-list">
+        <a href="/frontend/assets/pdf's/RCT_Polytechnic_college_list_25[1].pdf" target="_blank" class="college-item">
+          Click to View College List
+        </a>
+      </div>
+      <a href="/frontend/assets/pdf's/RCT_Polytechnic_college_list_25[1].pdf" download="Polytechnic.pdf">
+        <button class="card-export-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          Export as PDF
+        </button>
+      </a>
+    </div>
   </div>
 </div>
+
+<div class="loading">Generating PDF...</div>
+
 
 <!-- ends here -->
 <div id="educational-trust-container">
@@ -225,14 +437,6 @@
 
     <div class="edu-footer__bottom">
       <div class="edu-footer__social">
-        <a href="#" class="edu-footer__social-link">
-          <i class="fab fa-facebook"></i>
-          <span class="edu-footer__social-tooltip">Facebook</span>
-        </a>
-        <a href="#" class="edu-footer__social-link">
-          <i class="fab fa-twitter"></i>
-          <span class="edu-footer__social-tooltip">Twitter</span>
-        </a>
         <a href="https://www.instagram.com/rightchoice_trust?igsh=MXF1ZHo5eXIxMGxwNg==" class="edu-footer__social-link">
           <i class="fab fa-instagram"></i>
           <span class="edu-footer__social-tooltip">Instagram</span>
@@ -263,8 +467,7 @@
 </footer>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-<script src="/frontend/js/scrolltop.js"></script>
+
 
 <script src="/frontend/js/main.js"></script>
 <script src="/frontend/js/supporters.js"></script>
