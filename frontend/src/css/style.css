@@ -287,7 +287,7 @@ body.no-scroll .author-animation {
 .rct_submain{
   display: flex;
   justify-content: center;
-  background-color:#90caf9;
+  background: linear-gradient(45deg, #4158D0, #C850C0, #FFCC70);
   display: flex;
   border-radius: 4px;
   width: 890px;
@@ -301,18 +301,18 @@ body.no-scroll .author-animation {
   align-items: center;
   gap: 6px;
   font-size: 14px;
-  color: #000428;
+  color: #fff;
   flex-shrink: 0;
 }
 
 .rct-contact-item i {
-  color: #000428;
-  font-size: 0.7em;
+  color: #fff;
+  font-size: 0.8em;
 }
 
 .rct-contact-item a {
   text-decoration: none;
-  color: #000428;
+  color: #fff;
   transition: color 0.3s ease;
 }
 
@@ -327,12 +327,12 @@ body.no-scroll .author-animation {
 }
 
 .rct_main_title {
-  font-size: 42px;
+  font-size: 52px;
   margin: 0;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  background: linear-gradient(135deg, #023e7d, #014f86, #61a5c2);
+  background: linear-gradient(135deg,#000428,#003366,#003973,#004e92,#0648ff,#0077B6,#00A8E8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -451,6 +451,7 @@ body.no-scroll .author-animation {
     font-size: 36px;
     margin: 0;
   }
+
   .rct_logo{
     width: 80px;
     margin: 0px;
@@ -483,6 +484,11 @@ body.no-scroll .author-animation {
   .rct_top_info {
     display: none;
   }
+
+  .rct_submain,.rct_contact_item{
+    width: 500px;
+    font-size: 2px;
+  }
   .rct_main_header_inner {
     flex-direction: column;
     gap: 20px;
@@ -505,7 +511,7 @@ body.no-scroll .author-animation {
     margin-top: 10px;
     margin-bottom: 0px;
     margin-left: 0px;
-    border-top: 3px solid #0277bd;
+    border-left: 3px solid #0277bd;
     padding-left: 0;
     padding-top: 8px;
     text-align: center;
@@ -526,6 +532,21 @@ body.no-scroll .author-animation {
     font-size: 18px;
     margin: 0;
   }
+
+  .rct_submain{
+    width: 300px;
+    display: none;
+  }
+
+  .rct-contact-item {
+    text-align: center;
+    font-size: 8px;
+    gap: 5px;
+}
+
+.rct-contact-item i {
+    font-size: 8px;
+}
   
   .rct_subtitle {
     margin-top: 10px;
@@ -1131,8 +1152,6 @@ body.no-scroll .author-animation {
 }
 
 
-
-
 /* Core service styles */
 .core-service {
   background: linear-gradient(to right, #0D3B66, #003f87); /* Blue gradient */
@@ -1298,6 +1317,7 @@ body.no-scroll .author-animation {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   padding: 20px;
+  margin-bottom: 90px;
 }
 
 .rc-achievement-card {
