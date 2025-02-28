@@ -5,28 +5,28 @@ const teamMembers = [
     degree: 'B.E,M.E - MEchanical Engineer',
     position: 'CEO',
     image: '/frontend/public/images/thanasekar_rm.png',
-    description: '2/18 bharti nagar, Kutralam main road, Melagaram, Tenkasi - 627818'
+    description: 'Tenkasi - '
  },
  {
       name: 'Dr.Sivakumar.',
       degree: 'M.E,.Ph.D',
       position: 'Career Advisor',
       image: '/frontend/public/images/sivakumar.jpg',
-      description: 'P.N.Palayam, Coimbatore.'
+      description: 'Coimbatore.'
   },
   {
       name: 'Dr.A.Arjunan.',
       degree: 'DCE,B.E,M.E.Ph.D',
       position: 'Scholarships Organizer',
       image: '/frontend/public/images/arjunan_rm.png',
-      description: 'Medical College road, Tanjavur.'
+      description: 'Tanjavur.'
   },
   {
       name: 'S.Mohamed Naina Maricar.',
       degree:'MBA.,LLB.',
       position: 'Legal Analyzer',
       image: '/frontend/public/images/advocate_rm.png',
-      description: '458 Main Road,Nagore,Nagapattinam - 611002'
+      description: 'Nagapattinam'
   }
 ];
 
