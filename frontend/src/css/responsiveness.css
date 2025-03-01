@@ -74,3 +74,74 @@
   }
 }
 
+
+/* journey responsiveness */
+@media (max-width: 992px) {
+  .trust-about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .trust-contact-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .trust-timeline::after {
+    left: 31px;
+  }
+  
+  .trust-timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .trust-timeline-item:nth-child(even) {
+    left: 0;
+  }
+  
+  .trust-timeline-dot {
+    left: 15px;
+    right: auto;
+  }
+  
+  .trust-timeline-item:nth-child(even) .trust-timeline-dot {
+    left: 15px;
+  }
+  
+  .trust-timeline-left, .trust-timeline-right {
+    border-left: 4px solid #ff6b6b;
+    border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .trust-title {
+    font-size: 2.5rem;
+  }
+  
+  .trust-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .trust-section-title {
+    font-size: 2rem;
+  }
+  
+  .trust-stats-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .trust-vision-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .trust-team-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .trust-hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

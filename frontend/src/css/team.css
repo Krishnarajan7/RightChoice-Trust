@@ -64,7 +64,7 @@
   flex-shrink: 0;
   position: relative;
   object-fit: cover;;
-  z-index: 1;
+  z-index: 1;;
 }
 
 
@@ -256,6 +256,11 @@
       width: 250px;
       height: 250px;
   }
+
+  .team-section-member-image{
+    /* width: 300px;
+    height: auto; */
+  }
 }
 
 @media (max-width: 992px) {
@@ -324,7 +329,7 @@
   }
   
   .team-section-grid .team-section-member-image img {
-      width: 140px;
+      width: 240px;
       height: 140px;
   }
   
