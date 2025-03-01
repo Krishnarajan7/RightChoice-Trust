@@ -29,44 +29,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-      /* Ripple effect styles */
-      .ripple-container {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        overflow: hidden;
-        border-radius: inherit;
-        pointer-events: none;
-      }
-      
-      .ripple {
-        position: absolute;
-        border-radius: 50%;
-        transform: scale(0);
-        animation: ripple 0.6s linear;
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-      
-      @keyframes ripple {
-        to {
-          transform: scale(4);
-          opacity: 0;
-        }
-      }
-      
-      .resize-animation-stopper * {
-        transition: none !important;
-      }
-    </style>
-  
 </head>
   <body>
-    <div class="back-to-top-btn">
-      <div class="show-scroll-btn"></div>
-    </div>
 
   <section class="marque">  
     <div class="marquee-text">
@@ -135,9 +99,10 @@
             <li class="courses-dropdown">
                 <a href="#" class="active">What we do <i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-content">
+                  <a href="/frontend/pages/about.html"><i class="fas fa-medal"></i>About Us</a>
                     <a href="/frontend/pages/team.html"><i class="fas fa-code"></i>Our Team</a>
                     <!-- <a href="#"><i class="fas fa-database"></i>Panel Members</a> -->
-                    <a href="#"><i class="fas fa-bullhorn"></i>Our Incredibles</a>
+                    <a href="/frontend/pages/supporters.html"><i class="fas fa-bullhorn"></i>Our Previleges</a>
                 </div>
             </li>
             <li><a href="#"> Events</a></li>
@@ -190,11 +155,11 @@
       </div>
       <h2>Medical Sciences</h2>
       <div class="college-list">
-        <a href="/frontend/assets/pdf's/RCT Engineering college  list 25.pdf" target="_blank" class="college-item">
+        <a href="/frontend/assets/pdf's/MBBS.pdf" target="_blank" class="college-item">
           Click to View College List
         </a>
       </div>
-      <a href="/frontend/assets/pdf's/RCT Engineering college  list 25.pdf" download="Engineering.pdf">
+      <a href="/frontend/assets/pdf's/MBBS.pdf" download="Engineering.pdf">
         <button class="card-export-btn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
