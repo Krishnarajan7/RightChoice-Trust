@@ -1,141 +1,107 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Testimonial Slider
-  const slides = document.querySelectorAll('.rcet-testimonial-slide');
-  const dots = document.querySelectorAll('.rcet-dot');
-  const prevBtn = document.querySelector('.rcet-prev-btn');
-  const nextBtn = document.querySelector('.rcet-next-btn');
-  
-  let currentSlide = 0;
-  
-  function showSlide(n) {
-    slides.forEach(slide => slide.classList.remove('active'));
-    dots.forEach(dot => dot.classList.remove('active'));
-    
-    currentSlide = (n + slides.length) % slides.length;
-    
-    slides[currentSlide].classList.add('active');
-    dots[currentSlide].classList.add('active');
-  }
-  
-  if (prevBtn && nextBtn) {
-    prevBtn.addEventListener('click', () => {
-      showSlide(currentSlide - 1);
-    });
-    
-    nextBtn.addEventListener('click', () => {
-      showSlide(currentSlide + 1);
-    });
-  }
-  
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      showSlide(index);
-    });
+// Initialize AOS
+document.addEventListener('DOMContentLoaded', () => {
+  // Initialize AOS animation library
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+    mirror: false
   });
-  
-  // Auto slide every 5 seconds
-  setInterval(() => {
-    showSlide(currentSlide + 1);
-  }, 5000);
 
-  // Animate stats counter when in viewport
-  const statNumbers = document.querySelectorAll('.rcet-stat-number');
-  
-  function animateStats() {
-    statNumbers.forEach(stat => {
-      const target = parseInt(stat.getAttribute('data-count'));
-      const count = +stat.innerText;
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
       
-      const increment = target / 50; // Adjust speed
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
       
-      if (count < target) {
-        stat.innerText = Math.ceil(count + increment);
-        setTimeout(animateStats, 30);
-      } else {
-        stat.innerText = target;
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 100,
+          behavior: 'smooth'
+        });
       }
     });
-  }
-  
-  // Check if element is in viewport
-  function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-  
-  // Start animation when stats section is in viewport
-  let animationStarted = false;
-  
+  });
+
+  // Parallax effect for hero section
   window.addEventListener('scroll', () => {
-    if (!animationStarted && statNumbers.length > 0 && isInViewport(statNumbers[0])) {
-      animationStarted = true;
-      animateStats();
+    const heroSection = document.querySelector('.trust-hero-section');
+    const scrollPosition = window.pageYOffset;
+    
+    if (heroSection) {
+      heroSection.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
     }
   });
 
-  // Form submission
-  const contactForm = document.getElementById('rcetContactForm');
-  
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Get form values
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const phone = document.getElementById('phone').value;
-      const subject = document.getElementById('subject').value;
-      const message = document.getElementById('message').value;
-      
-      // Here you would typically send the form data to a server
-      // For demo purposes, we'll just log it and show an alert
-      console.log({ name, email, phone, subject, message });
-      
-      // Show success message
-      alert('Thank you for your message! We will get back to you soon.');
-      
-      // Reset form
-      contactForm.reset();
+  // Add hover effect for team cards
+  const teamCards = document.querySelectorAll('.trust-team-card');
+  teamCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-10px)';
+      card.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.1)';
     });
-  }
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(0)';
+      card.style.boxShadow = '0 5px 15px rgba 0, 0, 0, 0.05)';
+    });
+  });
 
-  // Animate elements on scroll
-  const animateElements = document.querySelectorAll('[data-aos]');
-  
-  function checkScroll() {
-    animateElements.forEach(element => {
-      if (isInViewport(element)) {
-        element.classList.add('aos-animate');
+  // Add hover effect for vision cards
+  const visionCards = document.querySelectorAll('.trust-vision-card');
+  visionCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-10px)';
+      card.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(0)';
+      card.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+    });
+  });
+
+  // Add hover effect for service cards
+  const serviceCards = document.querySelectorAll('.trust-service-card');
+  serviceCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-10px)';
+      card.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.1)';
+      card.querySelector('.trust-service-icon').style.color = '#1a3a3a';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(0)';
+      card.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.05)';
+      card.querySelector('.trust-service-icon').style.color = '#ff6b6b';
+    });
+  });
+
+  // Add active state for navigation links
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-link'); // Assuming you'll add these in your navbar
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      
+      if (pageYOffset >= sectionTop - 200) {
+        current = section.getAttribute('id');
       }
     });
-  }
-  
-  window.addEventListener('scroll', checkScroll);
-  checkScroll(); // Check on initial load
-});
-
-// Add parallax effect to hero section
-window.addEventListener('scroll', function() {
-  const heroSection = document.querySelector('.rcet-hero');
-  if (heroSection) {
-    const scrollPosition = window.pageYOffset;
-    heroSection.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
-  }
-});
-
-// Add hover effects to program cards
-const programCards = document.querySelectorAll('.rcet-program-card');
-programCards.forEach(card => {
-  card.addEventListener('mouseenter', () => {
-    card.style.transform = 'translateY(-10px)';
-  });
-  
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = 'translateY(0)';
+    
+    if (navLinks.length > 0) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    }
   });
 });
