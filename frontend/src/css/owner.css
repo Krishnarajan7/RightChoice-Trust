@@ -18,12 +18,15 @@
 
 .founder-page-title {
   text-align: center;
-  color: var(--founder-primary);
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-size: 2.5rem;
   margin-bottom: 3rem;
   position: relative;
   padding-bottom: 1rem;
-  text-transform: uppercase;
+  
   letter-spacing: 1px;
 }
 
