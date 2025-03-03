@@ -1,28 +1,28 @@
 // Team members data
 const teamMembers = [
   {
-    name: 'L.Thanasekar.',
+    name: 'L.Thanasekar',
     degree: 'B.E,M.E - MEchanical Engineer',
     position: 'CEO',
     image: '/frontend/public/images/thanasekar_rm.png',
-    description: 'Tenkasi - '
+    description: 'Tenkasi'
  },
  {
-      name: 'Dr.Sivakumar.',
+      name: 'Dr.Sivakumar',
       degree: 'M.E,.Ph.D',
       position: 'Career Advisor',
       image: '/frontend/public/images/sivakumar.jpg',
-      description: 'Coimbatore.'
+      description: 'Coimbatore'
   },
   {
-      name: 'Dr.A.Arjunan.',
+      name: 'Dr.A.Arjunan',
       degree: 'DCE,B.E,M.E.Ph.D',
       position: 'Scholarships Organizer',
       image: '/frontend/public/images/arjunan_rm.png',
-      description: 'Tanjavur.'
+      description: 'Tanjavur'
   },
   {
-      name: 'S.Mohamed Naina Maricar.',
+      name: 'S.Mohamed Naina Maricar',
       degree:'MBA.,LLB.',
       position: 'Legal Analyzer',
       image: '/frontend/public/images/advocate_rm.png',
