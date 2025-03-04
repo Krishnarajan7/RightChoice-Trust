@@ -11,7 +11,7 @@
 .founder-page-container {
   font-family: 'Poppins',serif;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 80px auto;
   padding: 2rem;
   width: 100%;
 }
@@ -225,7 +225,7 @@
   .founder-showcase {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 2rem;
+    /* padding: 1rem; */
   }
 
   .founder-photo-wrapper {
@@ -253,7 +253,10 @@
 
 @media (max-width: 576px) {
   .founder-page-container {
-    padding: 1rem;
+    padding: 0rem;
+    /* margin-right: 20px; */
+    margin: 0px;
+    margin-bottom: 60px;
   }
 
   .founder-showcase {
