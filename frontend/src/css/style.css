@@ -413,7 +413,6 @@ html, body {
     align-items: center;
   } */
 
-
   .rct_logo{
     width: 80px;
     margin: 0px;
@@ -947,102 +946,132 @@ html, body {
 }
 
 /* hero section */
-#hero {
+.quote-hero {
+  font-family: 'Poppins',serif;
+  background: linear-gradient(135deg, #000428, #003366, #003973);
+  min-height: 100vh;
   display: flex;
-  justify-content: center;  
   align-items: center;
-  height: 75vh;
-  overflow: hidden;
-  background: linear-gradient(135deg, #003973, #1e4d8b, #5b9bd5);
-}
-
-.hero-box {
-  display: flex;
-  width: 80%;
-  height: 60vh;
-  border-radius: 55px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-/* Left Section (Quotes) */
-.hero-left {
-  width: 50%;
-  background: linear-gradient(135deg, #0077B6, #00A8E8);
-  color: white;
-  display: flex;
   justify-content: center;
-  align-items: center;
   padding: 20px;
+  perspective: 1000px;
+}
+
+.quote-container {
+  max-width: 1200px;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.15), rgba(255, 69, 0, 0.15));
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 60px;
+  display: flex;
+  gap: 60px;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    inset 0 0 100px rgba(255, 255, 255, 0.1);
+  transition: background 1s ease;
   position: relative;
   overflow: hidden;
 }
 
-/* Animated Gradient */
-@keyframes gradientShift {
-  0% { background: linear-gradient(135deg, #0077B6, #00A8E8); }
-  25% { background: linear-gradient(135deg, #00A8E8, #0096C7); }
-  50% { background: linear-gradient(135deg, #0096C7, #48CAE4); }
-  75% { background: linear-gradient(135deg, #48CAE4, #0077B6); }
-  100% { background: linear-gradient(135deg, #0077B6, #00A8E8); }
+.quote-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 60%
+  );
+  animation: rotate 20s linear infinite;
 }
 
-/* Subtle Glowing Effect */
-@keyframes glowEffect {
-  0% { box-shadow: 0px 0px 10px rgba(0, 168, 232, 0.3); }
-  50% { box-shadow: 0px 0px 20px rgba(0, 168, 232, 0.6); }
-  100% { box-shadow: 0px 0px 10px rgba(0, 168, 232, 0.3); }
-}
-
-
-/* Apply Animations */
-.hero-left {
-  animation: gradientShift 6s infinite alternate ease-in-out, glowEffect 3s infinite alternate ease-in-out;
-}
-
-.quote-container {
-  text-align: center;
-  max-width: 80%;
-}
-
-.quote-container p {
-  font-family: 'Poppins', serif;
-  font-size: 22px;
-  font-weight: bold;
-  color: white;
-  line-height: 1.5;
-}
-
-.quote-container h3 {
-  font-family: 'Edu VIC WA NT Beginner', serif;
-  color: #f0c808;
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 10px;
-  opacity: 0.9;
-}
-
-/* Right Section (Images) */
-.hero-right {
-  width: 50%;
-  background-color: #F4F4F4;
+.quote-content {
+  flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
-.hero-right img {
-  width: 80%;
-  height: auto;
-  border-radius: 10px;
-  transition: opacity 0.8s ease-in-out;
+.quote-text {
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  font-family: 'Nunito', serif;
+  position: relative;
+  transition: all 0.5s ease;
+  transform-origin: left;
 }
 
-#quote-text,
-#quote-author,
-#hero-image {
-  transition: opacity 0.7s ease-in-out;
+.quote-text::before {
+  content: '"';
+  font-size: 6rem;
+  position: absolute;
+  left: -40px;
+  top: -40px;
+  color: rgba(255, 140, 0, 0.3);
+  font-family: 'Georgia', serif;
 }
+
+.quote-author {
+  font-size: 1.8rem;
+  color: #ffa07a;
+  transition: all 0.5s ease;
+  transform-origin: left;
+}
+
+.quote-image {
+  width: 450px;
+  height: 450px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.quote-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.quote-text.exit,
+.quote-author.exit {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.quote-image.exit {
+  opacity: 0;
+  transform: translateX(50px) scale(0.9);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
 
 /* What We Do Section */
 #what-we-do {
