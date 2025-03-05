@@ -114,7 +114,6 @@ document.addEventListener('DOMContentLoaded', function() {
         0 0 20px 5px rgba(255, 255, 255, 0.1),
         inset 0 0 40px 5px rgba(255, 255, 255, 0.05)
       `;
-      
       // Adjust overlay opacity based on mouse position
       const overlay = card.querySelector('.cardOverlay');
       const centerDistance = Math.sqrt(Math.pow(xPercent - 0.5, 2) + Math.pow(yPercent - 0.5, 2));
