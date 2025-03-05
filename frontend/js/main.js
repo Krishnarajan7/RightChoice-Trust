@@ -13,7 +13,7 @@ hamburger.addEventListener('click', () => {
     }
 });
 
-// Handle dropdowns correctly in mobile view
+// dropdowns
 dropdowns.forEach(dropdown => {
     const link = dropdown.querySelector('.nav-link');
     const dropdownContent = dropdown.querySelector('.dropdown-content');
@@ -31,10 +31,8 @@ dropdowns.forEach(dropdown => {
                 }
             });
 
-            // Toggle the clicked dropdown
             dropdown.classList.toggle('active');
 
-            // Smooth transition for dropdown
             if (isActive) {
                 dropdownContent.classList.remove("show");
             } else {
@@ -47,7 +45,6 @@ dropdowns.forEach(dropdown => {
     });
 });
 
-// Close mobile menu when clicking outside
 document.addEventListener('click', (e) => {
     if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
         navLinks.classList.remove('active');
@@ -59,7 +56,7 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Remove extra event listener that was causing conflicts
+
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".dropdown-content").forEach((dropdown) => {
         dropdown.classList.remove("show");
