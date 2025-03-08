@@ -26,8 +26,6 @@
   <!-- Google Font: Poppins -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
@@ -87,43 +85,54 @@
   </header>
   <div id="rightChoiceTrustRoot"></div>
 
-<nav class="navbar">
-    <div class="nav-content">
-        <a href="/frontend/pages/register.html">
-            <button class="call-now-btns">
-                <span>Register for Scholarships</span>
-                <i class="fa-solid fa-graduation-cap"></i>
-            </button>
-        </a>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/frontend/pages/admissions.html">Admissions</a></li>
-            <li class="courses-dropdown">
-                <a href="#" class="active">What we do <i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-content">
-                  <a href="#"><i class="fas fa-medal"></i>About Us</a>
-                    <a href="/frontend/pages/team.html"><i class="fas fa-code"></i>Our Team</a>
-                    <!-- <a href="#"><i class="fas fa-database"></i>Panel Members</a> -->
-                    <a href="/frontend/pages/supporters.html"><i class="fas fa-bullhorn"></i>Our Privileges</a>
-                </div>
-            </li>
-            <li><a href="#"> Events</a></li>
-            <li><a href="/frontend/pages/gallery.html">Gallery</a></li>
-            <li><a href="/frontend/pages/contact.html">Contact Us</a></li>
-        </ul>
-        <a href="tel:9095929553"><button class="call-now-btn">
-          <span>Call Now</span>
-          <i class="fas fa-phone"></i>
-      </button>
-    </a>    
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="/frontend/pages/register.html" class="register-btn">
+        <i class="fas fa-graduation-cap"></i>
+        Register for Scholarships
+      </a>
     </div>
-</nav>
+
+    <div class="nav-right">
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="/index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="/frontend/pages/admissions.html"><i class="fas fa-user-graduate"></i> Admissions</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">
+            <span><i class="fas fa-list-alt"></i> What we do</span>
+            <i class="fas fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="/frontend/pages/about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+            <li><a href="/frontend/pages/team.html"><i class="fa-solid fa-trophy"></i> Our Team</a></li>
+            <li><a href="/frontend/pages/events.html"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+          </ul>
+        </li>
+        <li><a href="/frontend/pages/supporters.html"><i class="fa-solid fa-building"></i> Colleges</a></li>
+        <li><a href="/frontend/pages/gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+        <li><a href="/frontend/pages/contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        <li class="call-now-mobile">
+          <a href="#" class="call-btn">
+            <i class="fas fa-phone"></i>
+            Call Now
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="call-btn desktop-only">
+        <i class="fas fa-phone"></i>
+        Call Now
+      </a>
+    </div>
+  </nav>
+  <div id="app"></div>
+
+  <!-- ends here -->
 
 <!-- about us -->
 
@@ -578,8 +587,8 @@
   </footer>
 
   <script src="/frontend/js/topbar.js"></script>
-  <script src="/frontend/js/hamb.js"></script>
   <script src="/frontend/js/main.js"></script>
+  <script src="/frontend/js/hamb.js"></script>
   <script src="/frontend/js/about.js"></script>
   <script src="/frontend/js/footer.js"></script>
 </body>
