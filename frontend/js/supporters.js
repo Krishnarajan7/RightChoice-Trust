@@ -137,15 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const viewButton = card.querySelector('.viewButton');
     const exportButton = card.querySelector('.exportButton');
     const categoryName = card.querySelector('.categoryTitle').textContent;
-    
-    viewButton.addEventListener('click', function(e) {
-      // We're not preventing default here to allow the PDF to open in a new tab
-      showModal('College List Opening', `Opening ${categoryName} college list in a new tab.`);
-      
-      // Add ripple effect to button
-      createRippleEffect(e, this);
-    });
-    
+
     exportButton.addEventListener('click', function(e) {
       // We're not preventing default here to allow the PDF to download
       showModal('Download Started', `${categoryName} college list is being downloaded.`);
