@@ -2,7 +2,7 @@
 const teamMembers = [
   {
     name: 'L.Thanasekar',
-    degree: 'B.E,M.E - MEchanical Engineer',
+    degree: 'B.E,M.E - Mechanical Engineer',
     position: 'CEO',
     image: '/frontend/public/images/thanasekar_rm.png',
     description: 'Tenkasi'
