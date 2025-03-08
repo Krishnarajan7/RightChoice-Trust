@@ -81,6 +81,30 @@
   }
 }
 
+@media (max-width: 768px) {
+  .what_we_do_para {
+      padding: 15px;
+      width: 95%;
+  }
+
+  .what_we_do_para p {
+      font-size: 16px;
+      line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .what_we_do_para {
+      padding: 10px;
+      width: 95%;
+  }
+
+  .what_we_do_para p {
+      font-size: 14px; 
+      line-height: 1.5;
+  }
+}
+
 
 /* journey responsiveness */
 @media (max-width: 992px) {
