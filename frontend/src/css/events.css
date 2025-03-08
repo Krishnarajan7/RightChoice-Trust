@@ -201,7 +201,54 @@
   letter-spacing: 1px;
 }
 
-.register-btn::before {
+.nav-left .registers-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #8257E6, #C054FF, #E65ACF);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(130, 87, 230, 0.25);
+  animation: pulses 2s infinite;
+}
+
+@keyframes pulses {
+  0% {
+      box-shadow: 0 4px 15px rgba(130, 87, 230, 0.25);
+  }
+  50% {
+      box-shadow: 0 4px 25px rgba(130, 87, 230, 0.4);
+  }
+  100% {
+      box-shadow: 0 4px 15px rgba(130, 87, 230, 0.25);
+  }
+}
+
+.nav-left .registers-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(130, 87, 230, 0.35);
+}
+
+.nav-left .registers-btn i {
+  font-size: 1.2em;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-3px);
+  }
+}
+
+.registers-btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -212,11 +259,11 @@
   transition: 0.5s;
 }
 
-.register-btn:hover::before {
+.registers-btn:hover::before {
   left: 100%;
 }
 
-.register-btn:hover {
+.registers-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
 }
