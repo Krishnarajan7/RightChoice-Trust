@@ -139,40 +139,67 @@
     </div>
   </nav>
   <div id="app"></div>
+  <!-- event id here -->
 
-  <!-- ends here -->
-
-  <!-- event startds here -->
-
-  <main class="events-container">
-    <h1 class="events-heading">Our Events & Achievements</h1>
-
-    <div class="events-filter">
-      <button class="filter-btn active" data-filter="all">All Events</button>
-      <!-- <button class="filter-btn" data-filter="scholarship">Scholarship Meetups</button>
-      <button class="filter-btn" data-filter="cultural">Cultural</button>
-      <button class="filter-btn" data-filter="academic">Academic</button>
-      <button class="filter-btn" data-filter="sports">Sports</button> -->
+  <div class="event-container" id="main-section">
+    <h1 class="event-title">Campus Events</h1>
+    
+    <div class="filter-section">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="scholarships">Scholarships</button>
+        <button class="filter-btn" data-filter="id-cards">ID Cards</button>
+        <button class="filter-btn" data-filter="workshops">Workshops</button>
     </div>
 
-    <div class="events-grid">
-      <!-- Events will be dynamically added here -->
-    </div>
-
-    <div class="event-modal">
-      <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <div class="modal-image-container">
-          <img src="" alt="" class="modal-image">
+    <div class="featured-card">
+        <h2>Featured Event</h2>
+        <div class="card" data-category="id-cards">
+            <h3>Student ID Card</h3>
+            <p>Get your official student identification card.</p>
+            <span class="date">March 15, 2024</span>
+            <a href="#" class="view-more">Learn More</a>
         </div>
-        <div class="modal-details">
-          <!-- Modal content will be dynamically added here -->
-        </div>
-      </div>
     </div>
-  </main>
 
+    <div class="view-all-section">
+        <button class="view-all-btn">View All ID Cards</button>
+    </div>
 
+    <div class="other-cards">
+        <div class="card" data-category="scholarships">
+            <h3>Sports Scholarship</h3>
+            <p>Special scholarship for sports achievers.</p>
+            <span class="date">April 1, 2024</span>
+            <a href="#" class="view-more">Learn More</a>
+        </div>
+
+        <div class="card" data-category="workshops">
+            <h3>Web Development Workshop</h3>
+            <p>Learn the basics of web development.</p>
+            <span class="date">March 25, 2024</span>
+            <a href="#" class="view-more">Learn More</a>
+        </div>
+
+        <div class="card" data-category="workshops">
+            <h3>AI Workshop</h3>
+            <p>Introduction to Artificial Intelligence.</p>
+            <span class="date">April 5, 2024</span>
+            <a href="#" class="view-more">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<div class="all-cards-page hidden" id="all-cards-section">
+    <div class="back-section">
+        <button class="back-btn">← Back to Events</button>
+    </div>
+    <h1 class="event-title">All ID Cards</h1>
+    <div class="cards-grid">
+        <!-- ID cards will be dynamically loaded here -->
+    </div>
+</div>
+
+  
   <!-- ends here -->
 
   <div id="educational-trust-container">
