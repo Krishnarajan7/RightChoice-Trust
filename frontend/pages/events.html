@@ -140,62 +140,93 @@
   </nav>
   <div id="app"></div>
   <!-- event id here -->
-
-  <div class="event-container" id="main-section">
-    <h1 class="event-title">Campus Events</h1>
+  <div class="cards-container">
+    <h1 class="main-title">Student Resources</h1>
     
-    <div class="filter-section">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="scholarships">Scholarships</button>
-        <button class="filter-btn" data-filter="id-cards">ID Cards</button>
-        <button class="filter-btn" data-filter="workshops">Workshops</button>
+    <div class="category-filter">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="academic">Academic</button>
+        <button class="filter-btn" data-category="id-cards">ID Cards</button>
+        <!-- <button class="filter-btn" data-category="events">Events</button> -->
     </div>
 
-    <div class="featured-card">
-        <h2>Featured Event</h2>
+    <div class="cards-grid" id="mainGrid">
+        <!-- Scholarship Card -->
+        <div class="card" data-category="academic">
+            <div class="card-image">
+                <img src="/frontend/public/images/IMG-20250227-WA0004.jpg" alt="Scholarship">
+                <span class="card-tag">Academic</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Scholarship Programs</h3>
+                <div class="card-details">
+                    <p class="detail-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E" width="16" height="16" alt="time">
+                        Applications Open
+                    </p>
+                    <p class="detail-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'%3E%3C/path%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'%3E%3C/path%3E%3C/svg%3E" width="16" height="16" alt="location">
+                        Multiple Programs Available
+                    </p>
+                </div>
+                <p class="card-description">Explore our scholarship opportunities designed to support exceptional students in their academic journey.</p>
+                <a href="/frontend/pages/register.html">
+                  <button class="action-btn scholarship-btn">Apply Now</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- ID Cards Gateway Card -->
         <div class="card" data-category="id-cards">
-            <h3>Student ID Card</h3>
-            <p>Get your official student identification card.</p>
-            <span class="date">March 15, 2024</span>
-            <a href="#" class="view-more">Learn More</a>
-        </div>
-    </div>
-
-    <div class="view-all-section">
-        <button class="view-all-btn">View All ID Cards</button>
-    </div>
-
-    <div class="other-cards">
-        <div class="card" data-category="scholarships">
-            <h3>Sports Scholarship</h3>
-            <p>Special scholarship for sports achievers.</p>
-            <span class="date">April 1, 2024</span>
-            <a href="#" class="view-more">Learn More</a>
-        </div>
-
-        <div class="card" data-category="workshops">
-            <h3>Web Development Workshop</h3>
-            <p>Learn the basics of web development.</p>
-            <span class="date">March 25, 2024</span>
-            <a href="#" class="view-more">Learn More</a>
+            <div class="card-image">
+                <img src="/frontend/public/images/idcards/2025RCT0001.jpg" alt="ID Cards Gateway">
+                <span class="card-tag">ID Cards</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Student ID Cards</h3>
+                <div class="card-details">
+                    <p class="detail-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E" width="16" height="16" alt="time">
+                        Instant Access
+                    </p>
+                    <p class="detail-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'%3E%3C/path%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'%3E%3C/path%3E%3C/svg%3E" width="16" height="16" alt="location">
+                        Digital Collection
+                    </p>
+                </div>
+                <p class="card-description">Access our comprehensive collection of student ID cards. Click below to explore all student identifications.</p>
+                <button class="action-btn view-more-btn" id="viewMoreBtn">View ID Cards</button>
+            </div>
         </div>
 
-        <div class="card" data-category="workshops">
-            <h3>AI Workshop</h3>
-            <p>Introduction to Artificial Intelligence.</p>
-            <span class="date">April 5, 2024</span>
-            <a href="#" class="view-more">Learn More</a>
-        </div>
+        <!-- Sample Event Card -->
+        <!-- <div class="card" data-category="events">
+            <div class="card-image">
+                <img src="https://placehold.co/400x300/27ae60/ffffff" alt="Campus Event">
+                <span class="card-tag">Event</span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Campus Cultural Fest</h3>
+                <div class="card-details">
+                    <p class="detail-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E" width="16" height="16" alt="time">
+                        Next Week
+                    </p>
+                    <p class="detail-item">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'%3E%3C/path%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'%3E%3C/path%3E%3C/svg%3E" width="16" height="16" alt="location">
+                        Main Auditorium
+                    </p>
+                </div>
+                <p class="card-description">Join us for a week-long celebration of culture, art, and talent. Register now to participate!</p>
+                <button class="action-btn event-btn">Register Now</button>
+            </div>
+        </div> -->
     </div>
-</div>
 
-<div class="all-cards-page hidden" id="all-cards-section">
-    <div class="back-section">
-        <button class="back-btn">← Back to Events</button>
-    </div>
-    <h1 class="event-title">All ID Cards</h1>
-    <div class="cards-grid">
-        <!-- ID cards will be dynamically loaded here -->
+    <!-- ID Cards Expanded Grid -->
+    <div class="expanded-section hidden" id="idCardsSection">
+        <h2 class="section-title">Student ID Cards</h2>
+        <div class="cards-grid" id="idCardsGrid"></div>
     </div>
 </div>
 
