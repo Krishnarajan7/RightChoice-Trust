@@ -1179,19 +1179,19 @@ html, body {
 }
 
 .what_we_do_para {
-  width: 90%; /* Keeps it responsive */
-  max-width: 800px; /* Prevents too wide text on large screens */
-  margin: auto; /* Centers the content */
-  padding: 20px; /* Adds some space around */
+  width: 90%;
+  max-width: 800px; 
+  margin: auto; 
+  padding: 20px; 
 }
 
 .what_we_do_para p {
-  text-align: justify; /* Justifies text */
-  line-height: 1.8; /* Improves readability */
+  text-align: justify;
+  line-height: 1.8;
   word-spacing: 2px;
   letter-spacing: 0.5px;
-  font-size: 18px; /* Default font size */
-  color: #333; /* Dark gray text for better readability */
+  font-size: 18px; 
+  color: #333;  
 }
 
 #what-we-do p {
