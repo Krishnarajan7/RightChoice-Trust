@@ -1250,6 +1250,8 @@ html, body {
 
 #what-we-do .service p {
   font-size: 1em;
+  word-spacing: normal;
+  text-align: justify;
   color: #F4F4F4;
   transition: color 0.3s ease;
 }
@@ -1315,6 +1317,10 @@ html, body {
 
 .core-content p {
   font-size: 1.1rem;
+  text-align: justify;
+  line-height: 1.8;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
   font-family: 'Poppins', serif;
   margin-bottom: 15px;
   color: white;
@@ -1637,5 +1643,6 @@ html, body {
 
 .trust-timeline-text {
   font-size: 1rem;
+  text-align: justify;
   color: #4a4a4a;
 }
