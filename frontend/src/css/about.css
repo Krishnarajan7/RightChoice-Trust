@@ -37,6 +37,8 @@
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   color: #4a4a4a;
+  text-align: justify;
+  word-spacing: 2px;
 }
 
 /* Hero Section */
@@ -268,6 +270,12 @@
   overflow: hidden;
 }
 
+.trust-service-card p{
+  width: 100%;
+  text-align:justify;
+  word-spacing: normal;
+}
+
 .trust-service-card::before {
   content: '';
   position: absolute;
@@ -350,6 +358,7 @@
 
 .trust-vision-text {
   font-size: 1rem;
+  text-align: justify;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -507,6 +516,7 @@
   font-style: italic;
   margin-bottom: 1.5rem;
   color: #4a4a4a;
+  text-align: justify;
   position: relative;
 }
 
