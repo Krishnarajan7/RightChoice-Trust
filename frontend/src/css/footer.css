@@ -78,6 +78,14 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+.edu-footer__section p{
+  text-align: justify;
+  line-height: 1.8;
+  word-spacing: 1.5px;
+  letter-spacing: 0.5px;
+}
+
 .edu-footer__section:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
