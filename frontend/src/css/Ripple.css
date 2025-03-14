@@ -75,6 +75,7 @@
 }
 
 .card-content p {
+  text-align: justify;
   font-size: 0.9rem;
   line-height: 1.6;
   color: #2d3748;
