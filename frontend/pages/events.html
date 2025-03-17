@@ -111,14 +111,15 @@
         <li><a href="/index.html"><i class="fas fa-home"></i> Home</a></li>
         <li><a href="/frontend/pages/admissions.html"><i class="fas fa-user-graduate"></i> Admissions</a></li>
         <li class="dropdown">
-          <a href="#"class="dropdown-toggle">
-            <span ><i class="fas fa-list-alt"></i> What we do</span>
+          <a href="#" class="dropdown-toggle">
+            <span><i class="fas fa-list-alt"></i> What we do</span>
             <i class="fas fa-chevron-down"></i>
           </a>
           <ul class="dropdown-menu">
             <li><a href="/frontend/pages/about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
             <li><a href="/frontend/pages/team.html"><i class="fa-solid fa-trophy"></i> Our Team</a></li>
-            <li><a href="/frontend/pages/events.html" ><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+            <li><a href="/frontend/pages/events.html"><i class="fa-solid fa-calendar-days"></i> Trust activities</a>
+            </li>
           </ul>
         </li>
         <li><a href="/frontend/pages/supporters.html"><i class="fa-solid fa-building"></i> Colleges</a></li>
@@ -142,95 +143,170 @@
   <!-- event id here -->
   <div class="cards-container">
     <h1 class="main-title">Student Resources</h1>
-    
+
     <div class="category-filter">
-        <button class="filter-btn active" data-category="all">All</button>
-        <button class="filter-btn" data-category="academic">Academic</button>
-        <button class="filter-btn" data-category="id-cards">ID Cards</button>
-        <!-- <button class="filter-btn" data-category="events">Events</button> -->
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="academic">Academic</button>
+      <button class="filter-btn" data-category="id-cards">ID Cards</button>
+      <button class="filter-btn" data-category="events">Events</button>
+      <button class="filter-btn" data-category="trust-schemes">Trust Schemes</button>
     </div>
 
     <div class="cards-grid" id="mainGrid">
-        <!-- Scholarship Card -->
-        <div class="card" data-category="academic">
-            <div class="card-image">
-                <img src="/frontend/public/images/IMG-20250227-WA0004.jpg" alt="Scholarship">
-                <span class="card-tag">Academic</span>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Scholarship Programs</h3>
-                <div class="card-details">
-                    <p class="detail-item">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E" width="16" height="16" alt="time">
-                        Applications Open
-                    </p>
-                    <p class="detail-item">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'%3E%3C/path%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'%3E%3C/path%3E%3C/svg%3E" width="16" height="16" alt="location">
-                        Multiple Programs Available
-                    </p>
-                </div>
-                <p class="card-description">Explore our scholarship opportunities designed to support exceptional students in their academic journey.</p>
-                <a href="/frontend/pages/register.html">
-                  <button class="action-btn scholarship-btn">Apply Now</button>
-                </a>
-            </div>
+      <!-- Scholarship Card -->
+      <div class="card" data-category="academic">
+        <div class="card-image">
+          <img src="/frontend/public/images/IMG-20250227-WA0006.jpg" alt="Scholarship">
+          <span class="card-tag">Academic</span>
         </div>
-
-        <!-- ID Cards Gateway Card -->
-        <div class="card" data-category="id-cards">
-            <div class="card-image">
-                <img src="/frontend/public/images/idcards/2025RCT0001.jpg" alt="ID Cards Gateway">
-                <span class="card-tag">ID Cards</span>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Student ID Cards</h3>
-                <div class="card-details">
-                    <p class="detail-item">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E" width="16" height="16" alt="time">
-                        Instant Access
-                    </p>
-                    <p class="detail-item">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'%3E%3C/path%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'%3E%3C/path%3E%3C/svg%3E" width="16" height="16" alt="location">
-                        Digital Collection
-                    </p>
-                </div>
-                <p class="card-description">Access our comprehensive collection of student ID cards. Click below to explore all student identifications.</p>
-                <button class="action-btn view-more-btn" id="viewMoreBtn">View ID Cards</button>
-            </div>
+        <div class="card-content">
+          <h3 class="card-title">Scholarship Programs</h3>
+          <div class="card-details">
+            <p class="detail-item">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E"
+                width="16" height="16" alt="time">
+              Applications Open
+            </p>
+            <p class="detail-item">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'%3E%3C/path%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'%3E%3C/path%3E%3C/svg%3E"
+                width="16" height="16" alt="location">
+              Multiple Programs Available
+            </p>
+          </div>
+          <p class="card-description">Explore our scholarship opportunities designed to support exceptional students in
+            their academic journey.</p>
+          <a href="/frontend/pages/register.html"><button class="action-btn scholarship-btn">Apply Now</button></a>
         </div>
+      </div>
 
-        <!-- Sample Event Card -->
-        <!-- <div class="card" data-category="events">
-            <div class="card-image">
-                <img src="https://placehold.co/400x300/27ae60/ffffff" alt="Campus Event">
-                <span class="card-tag">Event</span>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Campus Cultural Fest</h3>
-                <div class="card-details">
-                    <p class="detail-item">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E" width="16" height="16" alt="time">
-                        Next Week
-                    </p>
-                    <p class="detail-item">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'%3E%3C/path%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'%3E%3C/path%3E%3C/svg%3E" width="16" height="16" alt="location">
-                        Main Auditorium
-                    </p>
-                </div>
-                <p class="card-description">Join us for a week-long celebration of culture, art, and talent. Register now to participate!</p>
-                <button class="action-btn event-btn">Register Now</button>
-            </div>
-        </div> -->
+      <!-- ID Cards Gateway Card -->
+      <div class="card" data-category="id-cards">
+        <div class="card-image">
+          <img src="/frontend/public/images/idcards/2025RCT0001.jpg" alt="ID Cards Gateway">
+          <span class="card-tag">ID Cards</span>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Student ID Cards</h3>
+          <div class="card-details">
+            <p class="detail-item">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E"
+                width="16" height="16" alt="time">
+              Instant Access
+            </p>
+            <p class="detail-item">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'%3E%3C/path%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'%3E%3C/path%3E%3C/svg%3E"
+                width="16" height="16" alt="location">
+              Digital Collection
+            </p>
+          </div>
+          <p class="card-description">Access our comprehensive collection of student ID cards. Click below to explore
+            all student identifications.</p>
+          <button class="action-btn view-more-btn" id="viewMoreBtn">View ID Cards</button>
+        </div>
+      </div>
+
+      <!-- Trust Schemes Gateway Card -->
+      <div class="card" data-category="trust-schemes">
+        <div class="card-image">
+          <img src="/frontend/public/images/scheme/rc11.jpg" alt="Trust Schemes">
+          <span class="card-tag">Trust Schemes</span>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Trust Schemes</h3>
+          <div class="card-details">
+            <p class="detail-item">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E"
+                width="16" height="16" alt="time">
+              Multiple Schemes Available
+            </p>
+            <p class="detail-item">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'%3E%3C/path%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'%3E%3C/path%3E%3C/svg%3E"
+                width="16" height="16" alt="location">
+              Various Categories
+            </p>
+          </div>
+          <p class="card-description">Explore various trust schemes available for students. Click below to view all
+            schemes and their details.</p>
+          <button class="action-btn view-schemes-btn" id="viewSchemesBtn">View Trust Schemes</button>
+        </div>
+      </div>
+      
+
+      <!-- Future Use Card 1 -->
+      <!-- <div class="card" data-category="events">
+        <div class="card-image">
+          <img src="https://placehold.co/400x300/27ae60/ffffff" alt="Campus Event">
+          <span class="card-tag">Event</span>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Campus Cultural Fest</h3>
+          <div class="card-details">
+            <p class="detail-item">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E"
+                width="16" height="16" alt="time">
+              Next Week
+            </p>
+            <p class="detail-item">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'%3E%3C/path%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'%3E%3C/path%3E%3C/svg%3E"
+                width="16" height="16" alt="location">
+              Main Auditorium
+            </p>
+          </div>
+          <p class="card-description">Join us for a week-long celebration of culture, art, and talent. Register now to
+            participate!</p>
+          <button class="action-btn event-btn">Register Now</button>
+        </div>
+      </div> -->
+
+      <!-- <div class="card" data-category="academic">
+        <div class="card-image">
+          <img src="https://placehold.co/400x300/c0392b/ffffff" alt="Research Programs">
+          <span class="card-tag">Academic</span>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Research Programs</h3>
+          <div class="card-details">
+            <p class="detail-item">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'%3E%3C/path%3E%3C/svg%3E"
+                width="16" height="16" alt="time">
+              Year-round
+            </p>
+            <p class="detail-item">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'%3E%3C/path%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'%3E%3C/path%3E%3C/svg%3E"
+                width="16" height="16" alt="location">
+              All Departments
+            </p>
+          </div>
+          <p class="card-description">Explore research opportunities across various departments. Join our academic
+            research programs.</p>
+          <button class="action-btn scholarship-btn">Learn More</button>
+        </div>
+      </div> -->
     </div>
 
     <!-- ID Cards Expanded Grid -->
     <div class="expanded-section hidden" id="idCardsSection">
-        <h2 class="section-title">Student ID Cards</h2>
-        <div class="cards-grid" id="idCardsGrid"></div>
+      <h2 class="section-title">Student ID Cards</h2>
+      <div class="cards-grid" id="idCardsGrid"></div>
     </div>
-</div>
 
-  
+    <!-- Trust Schemes Expanded Grid -->
+    <div class="expanded-section hidden" id="trustSchemesSection">
+      <h2 class="section-title">Trust Schemes</h2>
+      <div class="cards-grid" id="trustSchemesGrid"></div>
+    </div>
+  </div>
+
   <!-- ends here -->
 
   <div id="educational-trust-container">
@@ -249,7 +325,8 @@
       <div class="edu-footer__content">
         <div class="edu-footer__section edu-footer__section--about">
           <h3 class="edu-footer__heading">About Us</h3>
-          <p>&nbsp;&nbsp;Right Choice Educational And Charitable Trust is dedicated to providing quality education and fostering
+          <p>&nbsp;&nbsp;Right Choice Educational And Charitable Trust is dedicated to providing quality education and
+            fostering
             academic excellence. Our mission is to empower students with knowledge and skills for a better future.</p>
           <div class="edu-footer__stats">
             <div class="edu-footer__stat-item">
