@@ -67,19 +67,16 @@
 
 
 /* actual design starts here */
+
 .cards-container {
   max-width: 1200px;
-  font-family: 'Poppins',serif;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
 .main-title {
   text-align: center;
-  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #2c3e50;
   margin-bottom: 40px;
   font-size: 2.5em;
   text-transform: uppercase;
@@ -95,7 +92,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background: linear-gradient(90deg, #3498db, #2980b9);
+  background: linear-gradient(90deg, #e74c3c, #2980b9);
   border-radius: 2px;
 }
 
@@ -108,27 +105,27 @@
 }
 
 .filter-btn {
+  background: #f8f9fa;
+  color: #2c3e50;
   border: 2px solid #e9ecef;
   padding: 10px 25px;
   border-radius: 25px;
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
-  transition: all 0.3s ease-in-out;
-  
-  background-size: 300% 300%;
-  background-position: left;
+  transition: all 0.3s ease;
 }
 
 .filter-btn:hover {
-  background-position: right;
-  background: linear-gradient(135deg, #8257E6, #C054FF, #E65ACF);
+  background: #e9ecef;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-
 .filter-btn.active {
-  background: linear-gradient(135deg, #8257E6, #C054FF, #E65ACF);
+  background: #2c3e50;
   color: white;
+  border-color: #2c3e50;
 }
 
 .cards-grid {
@@ -147,7 +144,7 @@
 }
 
 .card:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   transform: translateY(-5px);
 }
 
@@ -162,7 +159,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .card:hover .card-image img {
@@ -173,8 +170,8 @@
   position: absolute;
   top: 15px;
   left: 15px;
-  padding: 6px 15px;
-  border-radius: 15px;
+  padding: 8px 18px;
+  border-radius: 20px;
   font-size: 13px;
   font-weight: 600;
   color: white;
@@ -223,13 +220,35 @@
   padding: 12px;
   border-radius: 8px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: all 0.3s ease;
+  color: white;
+  background: #2c3e50;
   position: relative;
   overflow: hidden;
-  color: white;
+  transition: all 0.3s ease;
+}
+
+.action-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.action-btn:hover::before {
+  left: 100%;
 }
 
 .action-btn:hover {
@@ -237,40 +256,11 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.action-btn::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-      45deg,
-      transparent,
-      rgba(255, 255, 255, 0.1),
-      transparent
-  );
-  transform: rotate(45deg);
-  transition: 0.5s;
-}
-
-.action-btn:hover::after {
-  animation: shine 1.5s;
-}
-
-@keyframes shine {
-  0% {
-      transform: translateX(-50%) rotate(45deg);
-  }
-  100% {
-      transform: translateX(150%) rotate(45deg);
-  }
-}
-
-
 .scholarship-btn { background: #e74c3c; }
 .view-more-btn { background: #2980b9; }
 .event-btn { background: #27ae60; }
+.view-schemes-btn { background: #8e44ad; }
+.trust-scheme-btn { background: #8e44ad; }
 
 .expanded-section {
   margin-top: 60px;
@@ -278,41 +268,70 @@
   border-top: 2px solid #e9ecef;
 }
 
+.expanded-section:not(.hidden) {
+  animation: expandSection 0.6s ease forwards;
+}
+
+@keyframes expandSection {
+  from {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+#trustSchemesGrid .card {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+#trustSchemesGrid:not(.hidden) .card {
+  animation: slideInSchemes 0.5s ease forwards;
+}
+
+@keyframes slideInSchemes {
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+#trustSchemesGrid .card:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+#trustSchemesGrid .card:nth-child(3n) {
+  animation-delay: 0.3s;
+}
+
 .section-title {
   color: #2c3e50;
   margin-bottom: 30px;
   font-size: 1.8em;
   text-align: center;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: currentColor;
 }
 
 .hidden {
   display: none;
 }
 
-@keyframes fadeIn {
-  from { 
-      opacity: 0;
-      transform: translateY(20px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
-.fade-in {
-  animation: fadeIn 0.5s ease forwards;
-}
-
-[data-category] {
-  transition: all 0.5s ease;
-}
-
 [data-category].filtered-out {
-  opacity: 0;
-  transform: scale(0.8);
-  position: absolute;
-  pointer-events: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
