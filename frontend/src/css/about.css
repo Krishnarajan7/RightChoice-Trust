@@ -790,3 +790,29 @@
     gap: 1rem;
   }
 }
+
+.edu-footer__developer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.edu-footer__developer a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.edu-footer__developer-logo {
+  height: 28px;
+  width: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.edu-footer__developer-logo:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
